@@ -24,11 +24,4 @@ This directory contains information and examples related to hash table data stru
 
 | Problem | Difficulty | Description |
 |---------|------------|-------------|
-
-
-
-
-- [GeeksforGeeks - Hashing](https://www.geeksforgeeks.org/hashing-data-structure/)
-- [Wikipedia - Hash Table](https://en.wikipedia.org/wiki/Hash_table)
-
-Feel free to explore the examples and implement your own hash table solutions!
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Given in the problem link |
