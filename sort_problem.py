@@ -278,11 +278,11 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
         # Check if the README has a LeetCode Problems section
         if "## LeetCode Problems" in content:
             # Find the problems table and add the new problem
-            if "| Problem | Difficulty | Description |" in content:
+            if "| Problem | Difficulty |" in content:
                 # Add the new problem to the table
-                problem_entry = f"\n| [{problem_title}]({problem_url}) | {difficulty.title()} | Given in the problem link |"
+                problem_entry = f"\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
                 # Find the position where we should insert the new entry (after the table header and separator)
-                table_start = content.find("| Problem | Difficulty | Description |")
+                table_start = content.find("| Problem | Difficulty |")
                 table_end = content.find("##", table_start)
                 if table_end == -1:  # No section after the table
                     table_end = len(content)
@@ -299,14 +299,14 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
                 if next_section == -1:
                     next_section = len(content)
                 
-                problem_table = f"\n\n| Problem | Difficulty | Description |\n|---------|------------|-------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} | Given in the problem link |"
+                problem_table = f"\n\n| Problem | Difficulty |\n|---------|------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
                 
                 updated_content = content[:next_section] + problem_table + content[next_section:]
                 with open(readme_path, 'w') as f:
                     f.write(updated_content)
         else:
             # Add a new LeetCode Problems section at the end
-            problem_section = f"\n\n## LeetCode Problems\n\n| Problem | Difficulty | Description |\n|---------|------------|-------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} | Given in the problem link |"
+            problem_section = f"\n\n## LeetCode Problems\n\n| Problem | Difficulty |\n|---------|------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
             
             with open(readme_path, 'a') as f:
                 f.write(problem_section)
@@ -316,9 +316,9 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
             f.write(f"# {category_name}\n\n")
             f.write(f"This directory contains LeetCode problems related to {category_name.lower()}.\n\n")
             f.write("## LeetCode Problems\n\n")
-            f.write("| Problem | Difficulty | Description |\n")
-            f.write("|---------|------------|-------------|\n")
-            f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | Given in the problem link |\n")
+            f.write("| Problem | Difficulty |\n")
+            f.write("|---------|------------|\n")
+            f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} |")
 
 def copy_file_to_destinations(file_path: str, destinations: List[str], problem_title: str, problem_url: str, difficulty: str) -> List[str]:
     """
