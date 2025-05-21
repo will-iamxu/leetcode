@@ -32,3 +32,5 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 
 | Problem | Difficulty | Description |
 |---------|------------|-------------|
+
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | Given in the problem link |
