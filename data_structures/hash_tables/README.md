@@ -25,3 +25,4 @@ This directory contains information and examples related to hash table data stru
 | Problem | Difficulty | Description |
 |---------|------------|-------------|
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Given in the problem link |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Given in the problem link |
