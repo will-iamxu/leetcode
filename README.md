@@ -38,11 +38,6 @@ This repository includes several scripts to help manage your LeetCode practice:
 
 Sort your LeetCode solutions into the appropriate directories based on difficulty level and algorithms/data structures used.
 
-**Using the batch script (Windows):**
-```
-sort_leetcode.bat
-```
-
 **Using the Python script directly:**
 ```
 python sort_problem.py your_solution.cpp https://leetcode.com/problems/problem-name/ --api-key YOUR_OPENAI_API_KEY
