@@ -23,8 +23,6 @@ This repository is designed to help you practice and improve your coding skills 
   - **dynamic_programming/**: Explanations and examples of the dynamic programming pattern.
   - **binary_search/**: Explanations and examples of the binary search pattern.
 
-- **utils/**: Contains utility functions that can be used across different algorithms and data structures.
-
 ## Getting Started
 
 1. Clone the repository to your local machine.
@@ -36,35 +34,7 @@ This repository is designed to help you practice and improve your coding skills 
 
 This repository includes several scripts to help manage your LeetCode practice:
 
-#### 1. Create New Solutions
-
-Create a new solution file with the proper template for your preferred language.
-
-**Using the batch script (Windows):**
-```
-create_solution.bat
-```
-
-**Using the Python script directly:**
-```
-python utils/create_solution.py "Problem Name" --language cpp --url https://leetcode.com/problems/problem-slug/
-```
-
-#### 2. Find LeetCode Problems
-
-Search for LeetCode problems by name to get their URLs and difficulty levels.
-
-**Using the batch script (Windows):**
-```
-find_problem.bat
-```
-
-**Using the Python script directly:**
-```
-python utils/find_problem.py "problem name"
-```
-
-#### 3. Automatic Problem Sorting
+#### 1. Automatic Problem Sorting
 
 Sort your LeetCode solutions into the appropriate directories based on difficulty level and algorithms/data structures used.
 
@@ -75,24 +45,29 @@ sort_leetcode.bat
 
 **Using the Python script directly:**
 ```
-python utils/sort_problem.py your_solution.cpp https://leetcode.com/problems/problem-name/ --api-key YOUR_OPENAI_API_KEY
+python sort_problem.py your_solution.cpp https://leetcode.com/problems/problem-name/ --api-key YOUR_OPENAI_API_KEY
 ```
 
-Or for manual classification:
-```
-python utils/sort_problem.py your_solution.cpp https://leetcode.com/problems/problem-name/ --manual
-```
-
-#### 4. OpenAI Integration
+#### 2. OpenAI Integration
 
 The sorting script can use OpenAI's API to automatically determine the algorithm and data structure used in your solution.
 
 **Setting up OpenAI API key:**
 ```
-python utils/helpers.py --setup-api
+python helpers.py --setup-api
 ```
 
 This will store your API key in a `.env` file (which is gitignored).
+
+#### 3. Repository Structure
+
+To view the structure of the repository for easy reference:
+
+```
+python helpers.py --structure
+```
+
+This will output the organized folder structure of this repository.
 
 ## Contributing
 
