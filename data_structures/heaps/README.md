@@ -36,3 +36,7 @@ In this example, the root node (10) is greater than its children (9 and 8), sati
 ## Conclusion
 
 Understanding heaps is crucial for solving various algorithmic problems efficiently. This README provides a foundational overview of heaps, their properties, applications, and basic operations. For specific implementations and problems, refer to the respective code files in this directory.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

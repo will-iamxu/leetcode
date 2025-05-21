@@ -27,3 +27,7 @@ Given a sorted array, remove the duplicates in-place such that each element appe
 ## Conclusion
 
 The two pointers pattern is a versatile and efficient technique that can significantly reduce the complexity of solving problems involving linear data structures. Understanding how to implement this pattern can enhance problem-solving skills in coding interviews and competitive programming.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

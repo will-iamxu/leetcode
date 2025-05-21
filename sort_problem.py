@@ -212,8 +212,7 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     # Extract problem title from URL
     problem_info = get_problem_info_from_leetcode(problem_url)
     problem_title = problem_info["title"] or "Unknown Problem"
-    
-    # Prepare the prompt for OpenAI
+      # Prepare the prompt for OpenAI
     prompt = f"""
     Analyze this LeetCode solution for the problem "{problem_title}":
     
@@ -221,8 +220,8 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     
     Based on the code and the problem URL ({problem_url}), answer the following questions:
     1. What is the difficulty level of this problem? (easy, medium, or hard)
-    2. What data structures are used in this solution? Choose from: array, linked list, tree, graph, hash table, heap
-    3. What algorithm patterns are used in this solution? Choose from: two pointers, sliding window, dynamic programming, binary search
+    2. What data structures are used in this solution? Common examples include: array, linked list, tree, graph, hash table, heap, stack, queue, trie, etc. But identify ANY data structure being used.
+    3. What algorithm patterns are used in this solution? Common examples include: two pointers, sliding window, dynamic programming, binary search, etc. But identify ANY algorithm pattern being used.
     
     Format your response as a JSON object with the following structure:
     {{
@@ -358,8 +357,7 @@ def main():
     if not os.path.exists(args.file_path):
         print(f"Error: File '{args.file_path}' not found.")
         return 1
-    
-    # Get API key from command line or .env file
+      # Get API key from command line or .env file
     api_key = args.api_key
     if not api_key:
         api_key = load_api_key_from_env()
@@ -372,7 +370,7 @@ def main():
         return 1
     
     destinations = []
-      # Use OpenAI API for classification
+    # Use OpenAI API for classification
     print("Using OpenAI API to classify the problem...")
     difficulty, data_structures, patterns = classify_with_openai(api_key, args.file_path, args.leetcode_url)
     # Add difficulty directory to destinations
@@ -383,22 +381,57 @@ def main():
     for ds in data_structures:
         if ds in DATA_STRUCTURE_DIRS:
             destinations.append(DATA_STRUCTURE_DIRS[ds])
+        else:
+            # Create a new folder path for this data structure
+            # Convert to snake_case and plural form for consistency
+            ds_folder_name = ds.lower().replace(' ', '_') + 's'
+            new_ds_path = f"data_structures/{ds_folder_name}"
+            destinations.append(new_ds_path)
+            print(f"Creating new data structure directory for '{ds}': {new_ds_path}")
     
     # Add algorithm pattern directories to destinations
     for pattern in patterns:
         if pattern in PATTERN_DIRS:
             destinations.append(PATTERN_DIRS[pattern])
+        else:
+            # Create a new folder path for this pattern
+            # Convert to snake_case for consistency
+            pattern_folder_name = pattern.lower().replace(' ', '_')
+            new_pattern_path = f"patterns/{pattern_folder_name}"
+            destinations.append(new_pattern_path)
+            print(f"Creating new algorithm pattern directory for '{pattern}': {new_pattern_path}")
       # Get problem title from URL
     problem_info = get_problem_info_from_leetcode(args.leetcode_url)
     problem_title = problem_info["title"] or os.path.basename(args.file_path).replace(".cpp", "").replace("_", " ").title()
-    
-    # Copy the file to all destination directories
+      # Copy the file to all destination directories
     if destinations:
         copied_to = copy_file_to_destinations(args.file_path, destinations, problem_title, args.leetcode_url, difficulty or "easy")
         print(f"\nFile '{args.file_path}' was copied to:")
+        
+        # Group by directory type for better reporting
+        existing_dirs = set(list(DIFFICULTY_DIRS.values()) + list(DATA_STRUCTURE_DIRS.values()) + list(PATTERN_DIRS.values()))
+        new_dirs = []
+        standard_dirs = []
+        
         for path in copied_to:
-            print(f"  - {path}")
-        print("\nREADME.md files have been updated in each directory.")
+            if os.path.dirname(path) in existing_dirs:
+                standard_dirs.append(path)
+            else:
+                new_dirs.append(path)
+                
+        # Print standard directories first if any
+        if standard_dirs:
+            print("  Standard directories:")
+            for path in standard_dirs:
+                print(f"    - {path}")
+                
+        # Print new directories created for this classification
+        if new_dirs:
+            print("  Newly created directories:")
+            for path in new_dirs:
+                print(f"    - {path}")
+                
+        print("\nREADME.md files have been created/updated in each directory.")
     else:
         print("\nNo valid destinations were identified. The file was not copied.")
     

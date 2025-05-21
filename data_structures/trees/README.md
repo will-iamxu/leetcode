@@ -35,3 +35,7 @@ This section will include various examples and problems related to tree data str
 - [LeetCode - Tree Problems](https://leetcode.com/tag/tree/)
 
 Feel free to explore the examples and problems provided in this directory to enhance your understanding of tree data structures!
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

@@ -60,3 +60,7 @@ Linked lists are commonly used in scenarios where dynamic memory allocation is r
 ### Conclusion
 
 Linked lists are a fundamental data structure that provides flexibility in memory management and efficient data manipulation. Understanding linked lists is crucial for solving various algorithmic problems on platforms like LeetCode.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

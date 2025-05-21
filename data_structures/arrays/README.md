@@ -30,8 +30,6 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 
 ## LeetCode Problems
 
-| Problem | Difficulty | Description |
-|---------|------------|-------------|
-
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | Given in the problem link |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Given in the problem link |
+| Problem | Difficulty | 
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | 
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 

@@ -52,3 +52,7 @@ def fibonacci(n):
 ## Conclusion
 
 Dynamic programming is a crucial technique in algorithm design that can significantly reduce the time complexity of problems that exhibit overlapping subproblems and optimal substructure. Understanding and mastering this pattern can greatly enhance your problem-solving skills in competitive programming and technical interviews.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

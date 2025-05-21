@@ -26,3 +26,7 @@ This directory contains information and examples related to graph data structure
 ## Usage
 
 Refer to the individual examples and explanations for a deeper understanding of graph data structures and their applications in solving problems on platforms like LeetCode.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

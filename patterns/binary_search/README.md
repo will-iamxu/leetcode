@@ -42,3 +42,7 @@ def binary_search(arr, target):
 ## Conclusion
 
 The binary search pattern is a powerful technique that can be applied to various problems involving sorted data. Understanding and mastering this pattern is essential for efficient algorithm design and problem-solving in competitive programming and technical interviews.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 

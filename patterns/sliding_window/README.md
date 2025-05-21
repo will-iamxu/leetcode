@@ -28,3 +28,7 @@ The sliding window pattern is commonly used in problems such as:
 ## Conclusion
 
 The sliding window pattern is a powerful tool for solving a variety of problems involving sequences. By efficiently managing the window size and position, you can often reduce the time complexity of your solutions.
+
+## LeetCode Problems
+
+| Problem | Difficulty | 
