@@ -27,3 +27,4 @@ This directory contains information and examples related to hash table data stru
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | 
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium |
