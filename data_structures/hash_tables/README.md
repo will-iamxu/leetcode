@@ -22,7 +22,8 @@ This directory contains information and examples related to hash table data stru
 
 ## LeetCode Problems
 
-| Problem | Difficulty | Description |
-|---------|------------|-------------|
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Given in the problem link |
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Given in the problem link |
+| Problem | Difficulty |
+|---------|------------|
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | 
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |

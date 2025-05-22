@@ -7,3 +7,5 @@ This directory contains LeetCode problems related to algorithms/medium.
 | Problem | Difficulty |
 |---------|------------|
 
+
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |

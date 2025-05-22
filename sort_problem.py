@@ -165,6 +165,62 @@ PATTERN_DIRS = {
     "binary search": "patterns/binary_search"
 }
 
+# Define mappings to standardize terminology between similar concepts
+# Maps variant names to the standard name in one of the directories above
+TERM_MAPPING = {
+    # Data structure aliases
+    "hash map": "hash table",
+    "hashmap": "hash table",
+    "hashtable": "hash table",
+    "dictionary": "hash table",
+    "map": "hash table",
+    
+    "linked-list": "linked list",
+    
+    "arrays": "array",
+    "vector": "array",
+    "list": "array",
+    
+    "binary tree": "tree",
+    "binary search tree": "tree",
+    "bst": "tree",
+    "avl tree": "tree",
+    "red-black tree": "tree",
+    "trie": "tree",  # Consider if you want trie as a separate structure
+    
+    "priority queue": "heap",
+    "min heap": "heap",
+    "max heap": "heap",
+    
+    "directed graph": "graph",
+    "undirected graph": "graph",
+    "dag": "graph",  # Directed Acyclic Graph
+    
+    # Pattern aliases
+    "2 pointers": "two pointers",
+    "dp": "dynamic programming",
+    "divide and conquer": "dynamic programming",
+    "memoization": "dynamic programming",
+    "backtracking": "dynamic programming",  # Debatable, you might want this separate
+    
+    "binary": "binary search",
+    "binary search algorithm": "binary search",
+    
+    "sliding-window": "sliding window",
+    "window sliding": "sliding window",
+}
+
+# Define which terms should be treated explicitly as data structures vs patterns
+# This helps when a term could be classified as either
+DATA_STRUCTURE_TYPES = {
+    "array", "linked list", "tree", "graph", "hash table", "heap", "stack", "queue", "trie"
+}
+
+PATTERN_TYPES = {
+    "two pointers", "sliding window", "dynamic programming", "binary search", 
+    "greedy", "backtracking", "depth-first search", "breadth-first search"
+}
+
 def get_problem_info_from_leetcode(url: str) -> Dict:
     """
     Extract problem title and difficulty from LeetCode URL by parsing the URL.
@@ -211,8 +267,7 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     
     # Extract problem title from URL
     problem_info = get_problem_info_from_leetcode(problem_url)
-    problem_title = problem_info["title"] or "Unknown Problem"
-      # Prepare the prompt for OpenAI
+    problem_title = problem_info["title"] or "Unknown Problem"    # Prepare the prompt for OpenAI
     prompt = f"""
     Analyze this LeetCode solution for the problem "{problem_title}":
     
@@ -220,14 +275,37 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     
     Based on the code and the problem URL ({problem_url}), answer the following questions:
     1. What is the difficulty level of this problem? (easy, medium, or hard)
-    2. What data structures are used in this solution? Common examples include: array, linked list, tree, graph, hash table, heap, stack, queue, trie, etc. But identify ANY data structure being used.
-    3. What algorithm patterns are used in this solution? Common examples include: two pointers, sliding window, dynamic programming, binary search, etc. But identify ANY algorithm pattern being used.
+    
+    2. What data structures are primarily used in this solution?
+       Common examples include:
+       - array/list
+       - linked list
+       - tree (including binary tree, BST, trie)
+       - graph
+       - hash table/hash map/dictionary
+       - heap/priority queue
+       - stack
+       - queue
+       
+    3. What algorithm patterns are used in this solution?
+       Common examples include:
+       - two pointers
+       - sliding window
+       - dynamic programming
+       - binary search
+       - depth-first search (DFS)
+       - breadth-first search (BFS)
+       - greedy
+       - backtracking
+       
+    Distinguish clearly between data structures (what we use to store data) and algorithm patterns (approaches to solve problems).
+    For example, a "hash table" is a data structure while "two pointers" is an algorithm pattern.
     
     Format your response as a JSON object with the following structure:
     {{
         "difficulty": "easy",  // or "medium" or "hard"
-        "data_structures": ["array", "hash table"],  // list all that apply
-        "patterns": ["two pointers"]  // list all that apply
+        "data_structures": ["array", "hash table"],  // list all data structures that apply
+        "patterns": ["two pointers"]  // list all algorithm patterns that apply
     }}
     """
     
@@ -319,6 +397,58 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
             f.write("|---------|------------|\n")
             f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} |")
 
+def find_similar_existing_directory(proposed_path: str) -> Optional[str]:
+    """
+    Check if there's already a similar directory that exists with a different name.
+    Returns the existing directory path if found, None otherwise.
+    
+    For example, if proposed_path is 'patterns/hash_map' and 'data_structures/hash_tables' exists,
+    this function will return 'data_structures/hash_tables'.
+    """
+    # Extract the base name from the proposed path (e.g., 'hash_map' from 'patterns/hash_map')
+    proposed_base_name = os.path.basename(proposed_path)
+    
+    # Check if this is possibly a renamed variant of an existing directory
+    proposed_category = proposed_path.split('/')[0]  # e.g., 'patterns' or 'data_structures'
+    similar_concepts = []
+    
+    # Build list of all defined directories
+    all_dirs = list(DATA_STRUCTURE_DIRS.values()) + list(PATTERN_DIRS.values())
+    
+    # Find directories that might be similar based on the base name
+    for existing_dir in all_dirs:
+        existing_base = os.path.basename(existing_dir)
+        # Convert to singular form for comparison if needed
+        if existing_base.endswith('s'):
+            existing_singular = existing_base[:-1]
+        else:
+            existing_singular = existing_base
+            
+        proposed_singular = proposed_base_name
+        if proposed_singular.endswith('s'):
+            proposed_singular = proposed_singular[:-1]
+        
+        # Check for similarity using some basic rules
+        if (proposed_singular == existing_singular or
+            proposed_singular.replace('_', '') == existing_singular.replace('_', '') or
+            proposed_singular in existing_singular or
+            existing_singular in proposed_singular):
+            similar_concepts.append(existing_dir)
+    
+    # Check if the proposed directory is mapped to any existing path
+    for term, standard_term in TERM_MAPPING.items():
+        # Convert term to directory style
+        term_as_dir = term.replace(' ', '_')
+        if proposed_base_name == term_as_dir:
+            # Check if this standard term has a directory
+            if standard_term in DATA_STRUCTURE_DIRS:
+                return DATA_STRUCTURE_DIRS[standard_term]
+            elif standard_term in PATTERN_DIRS:
+                return PATTERN_DIRS[standard_term]
+    
+    # Return the first similar existing directory, if any
+    return similar_concepts[0] if similar_concepts else None
+
 def copy_file_to_destinations(file_path: str, destinations: List[str], problem_title: str, problem_url: str, difficulty: str) -> List[str]:
     """
     Copy the file to multiple destination directories, creating them if they don't exist.
@@ -328,7 +458,21 @@ def copy_file_to_destinations(file_path: str, destinations: List[str], problem_t
     file_name = os.path.basename(file_path)
     copied_to = []
     
-    for dest_dir in destinations:
+    # Remove duplicate destinations if any
+    unique_destinations = []
+    for dest in destinations:
+        if dest not in unique_destinations:
+            unique_destinations.append(dest)
+    
+    for dest_dir in unique_destinations:
+        # Check if there's a similar existing directory
+        similar_dir = find_similar_existing_directory(dest_dir)
+        
+        # If we found a similar directory that already exists, use that instead
+        if similar_dir and similar_dir != dest_dir and os.path.exists(similar_dir):
+            print(f"Using existing similar directory '{similar_dir}' instead of creating '{dest_dir}'")
+            dest_dir = similar_dir
+        
         # Create the directory if it doesn't exist
         os.makedirs(dest_dir, exist_ok=True)
         
@@ -376,9 +520,49 @@ def main():
     # Add difficulty directory to destinations
     if difficulty and difficulty in DIFFICULTY_DIRS:
         destinations.append(DIFFICULTY_DIRS[difficulty])
+      # Normalize data structures using mappings
+    normalized_data_structures = []
+    for ds in data_structures:
+        ds_lower = ds.lower()
+        if ds_lower in TERM_MAPPING:
+            # If this is a known alias, map it to its standard form
+            normalized_ds = TERM_MAPPING[ds_lower]
+            print(f"Mapping '{ds}' to standard form '{normalized_ds}'")
+            normalized_data_structures.append(normalized_ds)
+        else:
+            normalized_data_structures.append(ds_lower)
+    
+    # Normalize patterns using mappings
+    normalized_patterns = []
+    for pattern in patterns:
+        pattern_lower = pattern.lower()
+        if pattern_lower in TERM_MAPPING:
+            # If this is a known alias, map it to its standard form
+            normalized_pattern = TERM_MAPPING[pattern_lower]
+            print(f"Mapping '{pattern}' to standard form '{normalized_pattern}'")
+            normalized_patterns.append(normalized_pattern)
+        else:
+            normalized_patterns.append(pattern_lower)
+    
+    # Detect and resolve potential duplicates between data structures and patterns
+    # Some terms might be classified by OpenAI as both a data structure and a pattern
+    duplicates = set(normalized_data_structures) & set(normalized_patterns)
+    for duplicate in duplicates:
+        if duplicate in DATA_STRUCTURE_TYPES:
+            # This is primarily a data structure, remove from patterns
+            normalized_patterns = [p for p in normalized_patterns if p != duplicate]
+            print(f"Resolving duplicate: '{duplicate}' classified as data structure")
+        elif duplicate in PATTERN_TYPES:
+            # This is primarily a pattern, remove from data structures
+            normalized_data_structures = [ds for ds in normalized_data_structures if ds != duplicate]
+            print(f"Resolving duplicate: '{duplicate}' classified as algorithm pattern")
+        else:
+            # If it's not explicitly defined, prefer data structure classification
+            normalized_patterns = [p for p in normalized_patterns if p != duplicate]
+            print(f"Resolving ambiguous duplicate: '{duplicate}' defaulting to data structure")
     
     # Add data structure directories to destinations
-    for ds in data_structures:
+    for ds in normalized_data_structures:
         if ds in DATA_STRUCTURE_DIRS:
             destinations.append(DATA_STRUCTURE_DIRS[ds])
         else:
@@ -390,7 +574,7 @@ def main():
             print(f"Creating new data structure directory for '{ds}': {new_ds_path}")
     
     # Add algorithm pattern directories to destinations
-    for pattern in patterns:
+    for pattern in normalized_patterns:
         if pattern in PATTERN_DIRS:
             destinations.append(PATTERN_DIRS[pattern])
         else:

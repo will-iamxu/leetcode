@@ -33,3 +33,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | Problem | Difficulty | 
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | 
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |
