@@ -28,7 +28,7 @@ Here's a basic example of using a hash table (unordered_map) in C++:
 #include unordered_map 
 int main() {
     //declare map
-    unordered_map<string, int> map;
+    unordered_map<string, int> map(3); //all values get initalized to 0
     
     //inserting
     map["apple"] = 3; //inserts or updates
@@ -65,3 +65,4 @@ int main() {
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
