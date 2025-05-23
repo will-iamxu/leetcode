@@ -20,6 +20,42 @@ This directory contains information and examples related to hash table data stru
    - Caching data
    - Counting frequencies of elements
 
+## Implementation Examples
+
+Here's a basic example of using a hash table (unordered_map) in C++:
+
+```cpp
+int main() {
+    //declare map
+    unordered_map<string, int> map;
+    
+    //inserting
+    map["apple"] = 3; //inserts or updates
+    map.insert({"banana",5}); //inserts
+    
+    //accessing
+    cout << map["apple"]; //creates key if not present with default of 0
+    cout << map.at("apple"); //throws out_of_range if not found
+    
+    //iterate over elements
+    for (const auto& [key, value]: map){
+        cout << key << ": " << value << "\n";
+    }
+    
+    //erase key
+    map.erase("apple");
+    
+    //size + empty
+    cout << map.size();
+    cout << map.empty();
+    
+    //clears map
+    map.clear();
+    
+    return 0;
+}
+```
+
 ## LeetCode Problems
 
 | Problem | Difficulty |
