@@ -31,4 +31,5 @@ The sliding window pattern is a powerful tool for solving a variety of problems 
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

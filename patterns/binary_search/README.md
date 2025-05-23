@@ -45,4 +45,5 @@ The binary search pattern is a powerful technique that can be applied to various
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

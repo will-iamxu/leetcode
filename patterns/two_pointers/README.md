@@ -30,4 +30,5 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

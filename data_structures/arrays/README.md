@@ -18,19 +18,55 @@ Arrays are a collection of items stored at contiguous memory locations. They are
 4. **Searching**: Finding an element in the array (linear search, binary search).
 5. **Sorting**: Arranging the elements in a specific order (ascending or descending).
 
-## Examples
+## Implementation Examples
 
-- **Finding the Maximum Element**: A simple algorithm to find the maximum value in an array.
-- **Reversing an Array**: An example of how to reverse the elements of an array in place.
-- **Merging Two Sorted Arrays**: Demonstrating how to merge two sorted arrays into a single sorted array.
-
+```cpp
+#include <array> 
+#include <vector>
+int main() {
+    //standard c array
+    //declare array of size n
+    int arr[5];
+    //declare array with elements
+    int a[5] = {1,2,3,4,5};
+    //accessing elements
+    int x = a[2]; 
+    //modifying elements
+    a[2] = 0;
+    //length 
+    int len = sizeof(arr) / sizeof(arr[0]);
+    
+    //std::array
+    array<int, 5> ar = {1,2,3,4,5};
+    //accessing
+    // ar.at(2);
+    // ar[2];
+    //modifying
+    ar[2] = 50;
+    ar.at(2) = 100;
+    //size 
+    //ar.size();
+    
+    //vector
+    vector<int> v = {1,2,3};
+    //add elements
+    v.push_back(4);
+    //access 
+    cout << v[2];
+    //modify
+    v[2] = 10;
+    //size
+    cout << v.size();
+    }
+```
 ## Conclusion
 
 Understanding arrays is crucial for solving many algorithmic problems on platforms like LeetCode. This directory will provide various examples and solutions to common array-related problems.
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | 
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |

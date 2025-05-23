@@ -55,4 +55,5 @@ Dynamic programming is a crucial technique in algorithm design that can signific
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

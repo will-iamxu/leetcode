@@ -39,4 +39,5 @@ Understanding heaps is crucial for solving various algorithmic problems efficien
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

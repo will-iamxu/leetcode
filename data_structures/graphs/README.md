@@ -29,4 +29,5 @@ Refer to the individual examples and explanations for a deeper understanding of 
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

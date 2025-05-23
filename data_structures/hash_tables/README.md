@@ -25,6 +25,7 @@ This directory contains information and examples related to hash table data stru
 Here's a basic example of using a hash table (unordered_map) in C++:
 
 ```cpp
+#include unordered_map 
 int main() {
     //declare map
     unordered_map<string, int> map;

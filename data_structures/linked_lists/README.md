@@ -63,4 +63,5 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|

@@ -38,4 +38,5 @@ Feel free to explore the examples and problems provided in this directory to enh
 
 ## LeetCode Problems
 
-| Problem | Difficulty | 
+| Problem | Difficulty |
+|---------|------------|
