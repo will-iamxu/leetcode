@@ -74,3 +74,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
