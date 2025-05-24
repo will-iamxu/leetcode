@@ -32,3 +32,4 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 
 | Problem | Difficulty |
 |---------|------------|
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy |

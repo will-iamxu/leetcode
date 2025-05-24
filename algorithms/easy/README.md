@@ -9,3 +9,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | 
 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | 
 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy |

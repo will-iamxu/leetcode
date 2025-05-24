@@ -17,36 +17,116 @@ A linked list is a linear data structure where elements are stored in nodes, and
 - **Traversal**: Accessing each node in the list.
 - **Searching**: Finding a node with a specific value.
 
-### Example
+### Example Implementation
 
-Here is a simple implementation of a singly linked list in Python:
+Here is a simple implementation of a singly linked list in c++:
 
-```python
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+```cpp
+struct Node{
+    int data; //value
+    Node* next; //pointer to next node
+    Node(int val) : data(val), next(nullptr) {}
+}
+struct LinkedList {
+    Node* head;
+    Node* tail;
+    LinkedList() : head(nullptr), tail(nullptr) {}
+}
+void insertAtBeginning(Node*& head, int val){
+    Node* newNode = new Node(val); 
+    newNode->next = head; //whats after newNode is head
+    head = newNode; //head is now newNode
+}
+void insertAtEnd(Node*& head, int val){ //no tail
+    Node* newNode = new Node(val);
+    if (!head){
+        head = newNode; //if theres no head, newNode is head
+        return;
+    }
+    Node* temp = head;
+    while (temp->next) temp = temp->next; //if no tail node, has to traverse to end of list to add to end
+    temp->next = newNode;
+}
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+void insertAtEndTail(int val){ //with tail
+    Node* newNode = new Node(val); 
+    tail->next = newNode; //last value is newNode
+    tail = newNode;
+}
 
-    def append(self, data):
-        new_node = Node(data)
-        if not self.head:
-            self.head = new_node
-            return
-        last = self.head
-        while last.next:
-            last = last.next
-        last.next = new_node
+void insertAtPosition(Node*& head, int val, int pos){
+    Node* newNode = new Node(val);
+    Node* temp = head;
+    for (int i = 0; i<pos-1; ++i){ //stop one node before insert
+        temp = temp -> next;
+    }
+    newNode->next = temp->next; //point newNode to what comes after temp
+    temp->next=newNode; //points temp to newNode
+}
 
-    def print_list(self):
-        current = self.head
-        while current:
-            print(current.data, end=" -> ")
-            current = current.next
-        print("None")
+void deleteByValue(Node*& head, int val) {
+    if (!head) return;
+    if (head->data == val) {
+        Node* toDelete = head;
+        head = head->next;
+        delete toDelete;
+        return;
+    }
+    Node* temp = head;
+    while (temp->next && temp->next->data != val) temp = temp->next;
+    if (temp->next) {
+        Node* toDelete = temp->next;
+        temp->next = temp->next->next;
+        delete toDelete;
+    }
+}
+
+void deleteAtPosition(Node*& head, int pos) {
+    if (!head) return;
+    if (pos == 0) {
+        Node* toDelete = head;
+        head = head->next;
+        delete toDelete;
+        return;
+    }
+    Node* temp = head;
+    for (int i = 0; i < pos - 1 && temp->next; i++) temp = temp->next;
+    if (temp->next) {
+        Node* toDelete = temp->next;
+        temp->next = temp->next->next;
+        delete toDelete;
+    }
+}
+
+bool search(Node* head, int val) {
+    while (head) {
+        if (head->data == val) return true;
+        head = head->next;
+    }
+    return false;
+}
+
+void reverse(Node*& head) {
+    Node* prev = nullptr;
+    Node* curr = head;
+    Node* next = nullptr;
+    while (curr) {
+        next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+    }
+    head = prev;
+}
+
+int count(Node* head) {
+    int cnt = 0;
+    while (head) {
+        cnt++;
+        head = head->next;
+    }
+    return cnt;
+}
 ```
 
 ### Use Cases
@@ -65,3 +145,4 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 
 | Problem | Difficulty |
 |---------|------------|
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy |
