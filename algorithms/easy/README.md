@@ -13,3 +13,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy |
+| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |

@@ -59,6 +59,7 @@ int main() {
     cout << "Top point: (" << p.x << ", " << p.y << ")" << endl;
 
     return 0;
+}
 ```
 ## LeetCode Problems
 
