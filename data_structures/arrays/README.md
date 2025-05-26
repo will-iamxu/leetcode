@@ -75,3 +75,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy |
