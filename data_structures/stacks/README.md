@@ -66,3 +66,4 @@ int main() {
 | Problem | Difficulty |
 |---------|------------|
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy |
+| [Min Stack](https://leetcode.com/problems/min-stack/) | Easy |

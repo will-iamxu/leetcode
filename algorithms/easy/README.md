@@ -14,3 +14,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy |
 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |
+| [Min Stack](https://leetcode.com/problems/min-stack/) | Easy |
