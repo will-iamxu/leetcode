@@ -77,3 +77,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy |
 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |
+| [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium |

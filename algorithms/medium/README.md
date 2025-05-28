@@ -11,3 +11,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
+| [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium |
