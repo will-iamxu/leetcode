@@ -12,3 +12,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium |
+| [3Sum](https://leetcode.com/problems/3sum/description/) | Medium |
