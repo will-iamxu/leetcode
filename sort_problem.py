@@ -201,7 +201,6 @@ TERM_MAPPING = {
     "dp": "dynamic programming",
     "divide and conquer": "dynamic programming",
     "memoization": "dynamic programming",
-    "backtracking": "dynamic programming",  # Debatable, you might want this separate
     
     "binary": "binary search",
     "binary search algorithm": "binary search",

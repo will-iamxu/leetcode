@@ -19,6 +19,113 @@ A tree is a data structure that consists of nodes connected by edges. Each tree 
 4. **Red-Black Tree**: A balanced binary search tree with additional properties to ensure balance.
 5. **N-ary Tree**: A tree where each node can have at most N children.
 
+## Implementation Examples
+
+Binary Tree
+```cpp
+
+struct TreeNode {
+    int val;
+    TreeNode* left;
+    TreeNode* right;
+    TreeNode(int x): val(x), left(nullptr), right(nullptr) {}
+};
+
+TreeNode* insert(TreeNode* root, int val){
+    if (!root) return new TreeNode(val); // base case, empty spot found
+    if (val < root-> val) { //left smaller than node's value
+        root->left = insert(root->left, val);
+    }
+    else{ //right >= node value
+        root->right = insert(root->right, val);
+    }
+    return root;
+}
+
+void inorder(TreeNode* root){ //left -> node -> right
+    if (!root) return;
+    inorder(root->left);
+    cout << root -> val << " ";
+    inorder(root->right);
+}
+
+void preorder(TreeNode* root){ //node -> left -> right
+    if (!root) return;
+    cout << root -> val << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
+void postorder(TreeNode* root){ //left -> right -> node
+    if (!root) return;
+    preorder(root->left);
+    preorder(root->right);
+    cout << root -> val << " ";
+}
+
+bool search(TreeNode* root, int val){
+    if (!root) return false;
+    if (root->val == val) return true;
+    if (val < root->val) return search(root->left, val);
+    else return search(root->right,val);
+}
+
+//need both of these to delete
+TreeNode* findMin(TreeNode* node){
+    while(node->left) node = node->left;
+    return node;
+}
+
+TreeNode* deleteNode(TreeNode* root, int key){
+    if (!root) return nullptr;
+    if (key < root->val) {
+        root->left = deleteNode(root->left, key);//go left
+    }
+    else if (key > root->val) {
+        root->right = deleteNode(root->right, key); // Go right
+    } 
+    else {
+        // Node found
+        if (!root->left) {
+            TreeNode* temp = root->right;
+            delete root;
+            return temp;
+        } else if (!root->right) {
+            TreeNode* temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // Case 3: Two children
+        TreeNode* minNode = findMin(root->right);       // or max in left
+        root->val = minNode->val;                       // Copy value
+        root->right = deleteNode(root->right, minNode->val); // Delete duplicate
+    }
+    return root;
+}
+
+int height(TreeNode* root){
+    if (!root) return 0;
+    return 1 + max(height(root->left), height(root->right));
+}
+
+int size(TreeNode* root) {
+    if (!root) return 0;
+    return 1 + size(root->left) + size(root->right);
+}
+
+int findMinValue(TreeNode* root) {
+    if (!root) throw runtime_error("Empty tree");
+    while (root->left) root = root->left;
+    return root->val;
+}
+
+int findMaxValue(TreeNode* root) {
+    if (!root) throw runtime_error("Empty tree");
+    while (root->right) root = root->right;
+    return root->val;
+}
+```
 ## Examples and Problems
 
 This section will include various examples and problems related to tree data structures, including:
@@ -40,3 +147,5 @@ Feel free to explore the examples and problems provided in this directory to enh
 
 | Problem | Difficulty |
 |---------|------------|
+
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy |
