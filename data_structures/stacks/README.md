@@ -67,3 +67,4 @@ int main() {
 |---------|------------|
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy |
 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy |
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium |

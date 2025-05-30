@@ -13,3 +13,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium |
 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium |
+| [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium |
