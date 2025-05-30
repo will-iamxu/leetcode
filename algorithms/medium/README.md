@@ -15,3 +15,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [3Sum](https://leetcode.com/problems/3sum/description/) | Medium |
 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium |
