@@ -47,5 +47,5 @@ The binary search pattern is a powerful technique that can be applied to various
 
 | Problem | Difficulty |
 |---------|------------|
-
 | [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |
+| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |

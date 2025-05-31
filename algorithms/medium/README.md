@@ -16,3 +16,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium |
+| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |
