@@ -69,3 +69,4 @@ int main() {
 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy |
 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium |
+| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |

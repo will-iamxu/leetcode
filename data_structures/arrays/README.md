@@ -82,3 +82,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium |
 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |
+| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |
