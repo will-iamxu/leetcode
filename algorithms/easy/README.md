@@ -17,3 +17,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy |
 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy |
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
