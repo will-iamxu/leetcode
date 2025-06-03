@@ -18,3 +18,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy |
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
+| [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
