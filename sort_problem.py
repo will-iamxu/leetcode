@@ -613,8 +613,14 @@ def main():
             print("  Newly created directories:")
             for path in new_dirs:
                 print(f"    - {path}")
-                
-        print("\nREADME.md files have been created/updated in each directory.")
+                print("\nREADME.md files have been created/updated in each directory.")
+        
+        # Delete the original file after successful copying
+        try:
+            os.remove(args.file_path)
+            print(f"\nOriginal file '{args.file_path}' has been deleted.")
+        except Exception as e:
+            print(f"\nWarning: Could not delete original file '{args.file_path}': {e}")
     else:
         print("\nNo valid destinations were identified. The file was not copied.")
     
