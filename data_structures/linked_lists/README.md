@@ -149,3 +149,4 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |

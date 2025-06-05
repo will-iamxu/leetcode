@@ -41,3 +41,4 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
 | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |

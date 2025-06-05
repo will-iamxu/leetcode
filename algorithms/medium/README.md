@@ -19,3 +19,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |
 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
