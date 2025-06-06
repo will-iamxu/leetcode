@@ -20,3 +20,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |
 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium |
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
