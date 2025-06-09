@@ -35,3 +35,4 @@ The sliding window pattern is a powerful tool for solving a variety of problems 
 |---------|------------|
 
 | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |

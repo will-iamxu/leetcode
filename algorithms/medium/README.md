@@ -23,3 +23,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
 | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |
