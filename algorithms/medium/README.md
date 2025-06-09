@@ -22,3 +22,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
 | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
+| [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
