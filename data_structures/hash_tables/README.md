@@ -67,3 +67,4 @@ int main() {
 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium |
