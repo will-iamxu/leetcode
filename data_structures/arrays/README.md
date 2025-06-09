@@ -85,3 +85,4 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |
 | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
+| [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
