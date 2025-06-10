@@ -25,3 +25,4 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |

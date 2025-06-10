@@ -68,3 +68,4 @@ int main() {
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |

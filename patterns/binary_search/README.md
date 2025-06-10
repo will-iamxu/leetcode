@@ -52,3 +52,4 @@ The binary search pattern is a powerful technique that can be applied to various
 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
 | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |
