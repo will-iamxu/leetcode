@@ -4,6 +4,12 @@ This directory contains LeetCode problems related to sets.
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
-| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium |
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
+| [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

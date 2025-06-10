@@ -45,11 +45,17 @@ The binary search pattern is a powerful technique that can be applied to various
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
-| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |
-| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |
-| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
-| [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
-| [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
-| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
+| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | | |
+| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | | |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium | | |
+| [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium | | |
+| [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | | |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

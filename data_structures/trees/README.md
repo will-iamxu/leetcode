@@ -145,7 +145,13 @@ Feel free to explore the examples and problems provided in this directory to enh
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
 
-| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy |
+| [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

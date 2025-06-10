@@ -71,3 +71,9 @@ Feel free to contribute by adding new problems, solutions, or improving existing
 ## License
 
 This project is open-source and available under the MIT License.
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

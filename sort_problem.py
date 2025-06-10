@@ -318,7 +318,10 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
             ]
         )
         
-        result = json.loads(response.choices[0].message.content)
+        content = response.choices[0].message.content
+        if content is None:
+            raise ValueError("OpenAI API returned empty response")
+        result = json.loads(content)
         return (
             result.get("difficulty", "").lower() or "easy",
             [ds.lower() for ds in result.get("data_structures", [])],
@@ -354,11 +357,11 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
         # Check if the README has a LeetCode Problems section
         if "## LeetCode Problems" in content:
             # Find the problems table and add the new problem
-            if "| Problem | Difficulty |" in content:
-                # Add the new problem to the table
-                problem_entry = f"\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
+            if "| Problem | Difficulty | Issues/Mistakes | Videos |" in content:
+                # Add the new problem to the table (new format)
+                problem_entry = f"\n| [{problem_title}]({problem_url}) | {difficulty.title()} | | |"
                 # Find the position where we should insert the new entry (after the table header and separator)
-                table_start = content.find("| Problem | Difficulty |")
+                table_start = content.find("| Problem | Difficulty | Issues/Mistakes | Videos |")
                 table_end = content.find("##", table_start)
                 if table_end == -1:  # No section after the table
                     table_end = len(content)
@@ -368,6 +371,48 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
                 
                 with open(readme_path, 'w') as f:
                     f.write(updated_content)
+            elif "| Problem | Difficulty |" in content:
+                # Old format - convert to new format
+                old_header = "| Problem | Difficulty |"
+                old_separator = "|---------|------------|"
+                new_header = "| Problem | Difficulty | Issues/Mistakes | Videos |"
+                new_separator = "|---------|------------|-----------------|--------|"
+                
+                # Replace the header and separator
+                content = content.replace(old_header, new_header)
+                content = content.replace(old_separator, new_separator)
+                
+                # Add empty columns to existing entries
+                lines = content.split('\n')
+                updated_lines = []
+                in_table = False
+                
+                for line in lines:
+                    if "| Problem | Difficulty | Issues/Mistakes | Videos |" in line:
+                        in_table = True
+                        updated_lines.append(line)
+                    elif in_table and line.startswith('|') and not line.startswith('|------'):
+                        # This is a table row, check if it needs updating
+                        if line.count('|') == 3:  # Old format with 3 separators
+                            # Add two empty columns
+                            line = line.rstrip() + " | |"
+                        updated_lines.append(line)
+                    elif in_table and (line.startswith('##') or line.strip() == ''):
+                        # End of table
+                        in_table = False
+                        # Add the new problem entry before ending the table
+                        if line.startswith('##'):
+                            updated_lines.append(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | | |")
+                        updated_lines.append(line)
+                    else:
+                        updated_lines.append(line)
+                
+                # If we didn't add the problem yet (table was at the end), add it now
+                if in_table:
+                    updated_lines.append(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | | |")
+                
+                with open(readme_path, 'w') as f:
+                    f.write('\n'.join(updated_lines))
             else:
                 # Create a new table in the LeetCode Problems section
                 problems_section_start = content.find("## LeetCode Problems")
@@ -375,14 +420,14 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
                 if next_section == -1:
                     next_section = len(content)
                 
-                problem_table = f"\n\n| Problem | Difficulty |\n|---------|------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
+                problem_table = f"\n\n| Problem | Difficulty | Issues/Mistakes | Videos |\n|---------|------------|-----------------|--------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} | | |"
                 
                 updated_content = content[:next_section] + problem_table + content[next_section:]
                 with open(readme_path, 'w') as f:
                     f.write(updated_content)
         else:
             # Add a new LeetCode Problems section at the end
-            problem_section = f"\n\n## LeetCode Problems\n\n| Problem | Difficulty |\n|---------|------------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} |"
+            problem_section = f"\n\n## LeetCode Problems\n\n| Problem | Difficulty | Issues/Mistakes | Videos |\n|---------|------------|-----------------|--------|\n| [{problem_title}]({problem_url}) | {difficulty.title()} | | |"
             
             with open(readme_path, 'a') as f:
                 f.write(problem_section)
@@ -392,9 +437,9 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
             f.write(f"# {category_name}\n\n")
             f.write(f"This directory contains LeetCode problems related to {category_name.lower()}.\n\n")
             f.write("## LeetCode Problems\n\n")
-            f.write("| Problem | Difficulty |\n")
-            f.write("|---------|------------|\n")
-            f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} |")
+            f.write("| Problem | Difficulty | Issues/Mistakes | Videos |\n")
+            f.write("|---------|------------|-----------------|--------|\n")
+            f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | | |")
 
 def find_similar_existing_directory(proposed_path: str) -> Optional[str]:
     """

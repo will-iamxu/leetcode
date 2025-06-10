@@ -65,26 +65,32 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
-| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | 
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium |
-| [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
-| [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
-| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy |
-| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy |
-| [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium |
-| [3Sum](https://leetcode.com/problems/3sum/description/) | Medium |
-| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium |
-| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium |
-| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium |
-| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium |
-| [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy |
-| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium |
-| [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium |
-| [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium |
-| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/) | Easy | | |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | | |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | | |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | | |
+| [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | | |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | | |
+| [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy | | |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | | |
+| [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | | |
+| [Binary Search](https://leetcode.com/problems/binary-search/) | Easy | | |
+| [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | | |
+| [3Sum](https://leetcode.com/problems/3sum/description/) | Medium | | |
+| [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) | Medium | | |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | | |
+| [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | | |
+| [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | | |
+| [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | | |
+| [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium | | |
+| [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium | | |
+| [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | | |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

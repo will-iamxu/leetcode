@@ -59,13 +59,19 @@ int main() {
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
-| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | 
-| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | 
-| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium |
-| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium |
-| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium |
-| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium |
-| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium |
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
+| [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | | |
+| [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | | |
+| [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | | |
+| [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | | |
+| [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | | |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | | |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
+| [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*

@@ -143,10 +143,16 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 
 ## LeetCode Problems
 
-| Problem | Difficulty |
-|---------|------------|
-| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy |
-| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy |
-| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy |
-| [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium |
-| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium |
+| Problem | Difficulty | Issues/Mistakes | Videos |
+|---------|------------|-----------------|--------|
+| [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | | |
+| [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | | |
+| [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | | |
+| [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium | | |
+| [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | | |
+
+## Issues
+*Issues encountered while solving problems in this category (leave blank for now)*
+
+## Videos  
+*Helpful video resources for problems in this category (leave blank for now)*
