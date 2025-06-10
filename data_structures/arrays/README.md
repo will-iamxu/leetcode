@@ -89,7 +89,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | | |
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
-## Issues
+
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

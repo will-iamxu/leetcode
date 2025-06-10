@@ -37,7 +37,8 @@ The sliding window pattern is a powerful tool for solving a variety of problems 
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
 
-## Issues
+
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

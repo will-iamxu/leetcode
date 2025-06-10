@@ -27,7 +27,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
-## Issues
+
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
