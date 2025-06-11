@@ -28,7 +28,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
 
-| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |## Issues
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
+| [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
