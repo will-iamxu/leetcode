@@ -44,10 +44,5 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | | |
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
-
-
-| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |## Issues
-*Issues encountered while solving problems in this category (leave blank for now)*
-
-## Videos  
-*Helpful video resources for problems in this category (leave blank for now)*
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |
+| [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |

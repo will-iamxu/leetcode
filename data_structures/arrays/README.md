@@ -90,7 +90,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
 
-| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |## Issues
+| [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
+| [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
