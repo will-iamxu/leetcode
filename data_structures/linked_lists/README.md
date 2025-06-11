@@ -152,7 +152,8 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | | |
 
 
-| [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |## Issues
+| [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

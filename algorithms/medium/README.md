@@ -29,7 +29,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 
 
 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
-| [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |## Issues
+| [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |
+| [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
