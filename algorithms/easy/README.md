@@ -21,7 +21,8 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | | |
 
 
-| [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | | |## Issues
+| [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | | |
+| [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
