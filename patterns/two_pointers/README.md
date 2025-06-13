@@ -46,3 +46,4 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |

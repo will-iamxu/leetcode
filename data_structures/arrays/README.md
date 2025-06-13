@@ -91,7 +91,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 
 
 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
-| [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |## Issues
+| [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
