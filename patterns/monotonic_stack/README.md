@@ -8,7 +8,8 @@ This directory contains LeetCode problems related to patterns/monotonic stack.
 |---------|------------|-----------------|--------|
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) | Medium | | |
 
-## Issues
+
+| [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
