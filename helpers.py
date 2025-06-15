@@ -58,10 +58,23 @@ def setup_api_key():
     print("This file is gitignored and won't be committed.")
     print("You can now use the sort_problem.py script with automatic classification.")
 
+def add_video_link():
+    """Add a video link to README files for a specific problem"""
+    print("Use the add_video.py script to add video links:")
+    print("  python3 add_video.py \"Problem Name\" \"video_url\"")
+    print("\nExamples:")
+    print("  python3 add_video.py \"Two Sum\" \"https://youtu.be/abc123\"")
+    print("  python3 add_video.py \"Container With Most Water\" \"https://youtube.com/watch?v=xyz789\"")
+    print("  python3 add_video.py \"Binary Search\" \"\"  # Remove video link")
+    print("\nOptions:")
+    print("  --dry-run    Show what would be updated without making changes")
+    print("  --threshold  Set similarity threshold (default: 0.7)")
+
 def main():
     parser = argparse.ArgumentParser(description="Helper utilities for LeetCode practice")
     parser.add_argument("--structure", action="store_true", help="Print the repository structure")
     parser.add_argument("--setup-api", action="store_true", help="Set up OpenAI API key")
+    parser.add_argument("--add-video", action="store_true", help="Help with adding video links")
     
     args = parser.parse_args()
     
@@ -69,6 +82,8 @@ def main():
         print_repository_structure()
     elif args.setup_api:
         setup_api_key()
+    elif args.add_video:
+        add_video_link()
     else:
         parser.print_help()
 
