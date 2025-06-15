@@ -151,3 +151,4 @@ Feel free to explore the examples and problems provided in this directory to enh
 | [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | Recursion | |
 | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | | |
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
+| [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |

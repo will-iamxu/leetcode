@@ -22,7 +22,8 @@ This directory contains LeetCode problems related to algorithms/easy.
 
 
 | [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | | |
-| [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | | |## Issues
+| [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | | |
+| [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
