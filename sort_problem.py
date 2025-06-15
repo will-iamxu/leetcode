@@ -162,7 +162,14 @@ PATTERN_DIRS = {
     "two pointers": "patterns/two_pointers",
     "sliding window": "patterns/sliding_window",
     "dynamic programming": "patterns/dynamic_programming",
-    "binary search": "patterns/binary_search"
+    "binary search": "patterns/binary_search",
+    "depth-first search": "patterns/depth-first_search_(dfs)",
+    "breadth-first search": "patterns/breadth_first_search_(bfs)",
+    "backtracking": "patterns/backtracking",
+    "greedy": "patterns/greedy",
+    "monotonic stack": "patterns/monotonic_stack",
+    "prefix sum": "patterns/prefix_sum",
+    "suffix sum": "patterns/suffix_sum"
 }
 
 # Define mappings to standardize terminology between similar concepts
@@ -207,6 +214,16 @@ TERM_MAPPING = {
     
     "sliding-window": "sliding window",
     "window sliding": "sliding window",
+    
+    # DFS/BFS aliases
+    "dfs": "depth-first search",
+    "depth first search": "depth-first search",
+    "depth-first-search": "depth-first search",
+    "depth_first_search": "depth-first search",
+    "bfs": "breadth-first search",
+    "breadth first search": "breadth-first search",
+    "breadth-first-search": "breadth-first search",
+    "breadth_first_search": "breadth-first search",
 }
 
 # Define which terms should be treated explicitly as data structures vs patterns
@@ -217,7 +234,8 @@ DATA_STRUCTURE_TYPES = {
 
 PATTERN_TYPES = {
     "two pointers", "sliding window", "dynamic programming", "binary search", 
-    "greedy", "backtracking", "depth-first search", "breadth-first search"
+    "greedy", "backtracking", "depth-first search", "breadth-first search",
+    "monotonic stack", "prefix sum", "suffix sum"
 }
 
 def get_problem_info_from_leetcode(url: str) -> Dict:
@@ -441,6 +459,43 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
             f.write("|---------|------------|-----------------|--------|\n")
             f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | | |")
 
+def normalize_directory_name(name: str, category: str) -> str:
+    """
+    Normalize directory name based on term mapping and category.
+    
+    Args:
+        name: The name to normalize
+        category: Either 'patterns' or 'data_structures'
+    
+    Returns:
+        Normalized directory name
+    """
+    # Apply term mapping first
+    normalized_name = TERM_MAPPING.get(name.lower(), name.lower())
+    
+    if category == 'patterns':
+        # Check if it's already in PATTERN_DIRS
+        if normalized_name in PATTERN_DIRS:
+            return PATTERN_DIRS[normalized_name]
+        # Handle special DFS/BFS cases
+        elif normalized_name == "depth-first search":
+            return "patterns/depth-first_search_(dfs)"
+        elif normalized_name == "breadth-first search":
+            return "patterns/breadth_first_search_(bfs)"
+        else:
+            # Convert to snake_case for consistency
+            return f"patterns/{normalized_name.replace(' ', '_')}"
+    elif category == 'data_structures':
+        # Check if it's already in DATA_STRUCTURE_DIRS
+        if normalized_name in DATA_STRUCTURE_DIRS:
+            return DATA_STRUCTURE_DIRS[normalized_name]
+        else:
+            # Convert to snake_case and add plural form for consistency
+            ds_folder_name = normalized_name.replace(' ', '_') + 's'
+            return f"data_structures/{ds_folder_name}"
+    
+    return name  # fallback
+
 def find_similar_existing_directory(proposed_path: str) -> Optional[str]:
     """
     Check if there's already a similar directory that exists with a different name.
@@ -607,27 +662,17 @@ def main():
     
     # Add data structure directories to destinations
     for ds in normalized_data_structures:
-        if ds in DATA_STRUCTURE_DIRS:
-            destinations.append(DATA_STRUCTURE_DIRS[ds])
-        else:
-            # Create a new folder path for this data structure
-            # Convert to snake_case and plural form for consistency
-            ds_folder_name = ds.lower().replace(' ', '_') + 's'
-            new_ds_path = f"data_structures/{ds_folder_name}"
-            destinations.append(new_ds_path)
-            print(f"Creating new data structure directory for '{ds}': {new_ds_path}")
+        ds_path = normalize_directory_name(ds, 'data_structures')
+        destinations.append(ds_path)
+        if ds not in DATA_STRUCTURE_DIRS:
+            print(f"Creating new data structure directory for '{ds}': {ds_path}")
     
     # Add algorithm pattern directories to destinations
     for pattern in normalized_patterns:
-        if pattern in PATTERN_DIRS:
-            destinations.append(PATTERN_DIRS[pattern])
-        else:
-            # Create a new folder path for this pattern
-            # Convert to snake_case for consistency
-            pattern_folder_name = pattern.lower().replace(' ', '_')
-            new_pattern_path = f"patterns/{pattern_folder_name}"
-            destinations.append(new_pattern_path)
-            print(f"Creating new algorithm pattern directory for '{pattern}': {new_pattern_path}")
+        pattern_path = normalize_directory_name(pattern, 'patterns')
+        destinations.append(pattern_path)
+        if pattern not in PATTERN_DIRS:
+            print(f"Creating new algorithm pattern directory for '{pattern}': {pattern_path}")
       # Get problem title from URL
     problem_info = get_problem_info_from_leetcode(args.leetcode_url)
     problem_title = problem_info["title"] or os.path.basename(args.file_path).replace(".cpp", "").replace("_", " ").title()
