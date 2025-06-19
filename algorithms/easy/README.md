@@ -19,15 +19,8 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | | |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | | |
 | [Best Time To Buy And Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Easy | | |
-
-
 | [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | | |
 | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | | |
 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |
 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | | |
 
-## Issues
-*Issues encountered while solving problems in this category (leave blank for now)*
-
-## Videos  
-*Helpful video resources for problems in this category (leave blank for now)*

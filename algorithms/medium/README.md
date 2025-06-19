@@ -26,8 +26,6 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
-
-
 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
 | [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |
