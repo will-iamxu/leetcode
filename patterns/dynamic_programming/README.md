@@ -58,7 +58,8 @@ Dynamic programming is a crucial technique in algorithm design that can signific
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
 
-## Issues
+
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

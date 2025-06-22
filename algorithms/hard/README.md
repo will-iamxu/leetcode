@@ -7,7 +7,8 @@ This directory contains LeetCode problems related to algorithms/hard.
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |
-| [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |## Issues
+| [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

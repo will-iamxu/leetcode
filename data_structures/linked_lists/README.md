@@ -153,3 +153,4 @@ Linked lists are a fundamental data structure that provides flexibility in memor
 | [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | Iteration | |
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | Floyd's Algorithm / Linked List Cycle| |
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
