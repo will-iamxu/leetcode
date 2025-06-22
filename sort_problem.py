@@ -167,6 +167,7 @@ PATTERN_DIRS = {
     "breadth-first search": "patterns/breadth_first_search_(bfs)",
     "backtracking": "patterns/backtracking",
     "greedy": "patterns/greedy",
+    "divide and conquer": "patterns/divide_and_conquer",
     "monotonic stack": "patterns/monotonic_stack",
     "prefix sum": "patterns/prefix_sum",
     "suffix sum": "patterns/suffix_sum"
@@ -206,7 +207,6 @@ TERM_MAPPING = {
     # Pattern aliases
     "2 pointers": "two pointers",
     "dp": "dynamic programming",
-    "divide and conquer": "dynamic programming",
     "memoization": "dynamic programming",
     
     "binary": "binary search",
@@ -235,7 +235,7 @@ DATA_STRUCTURE_TYPES = {
 PATTERN_TYPES = {
     "two pointers", "sliding window", "dynamic programming", "binary search", 
     "greedy", "backtracking", "depth-first search", "breadth-first search",
-    "monotonic stack", "prefix sum", "suffix sum"
+    "divide and conquer", "monotonic stack", "prefix sum", "suffix sum"
 }
 
 def get_problem_info_from_leetcode(url: str) -> Dict:
