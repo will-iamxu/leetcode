@@ -24,3 +24,5 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |
 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | | |
 
+
+| [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | | |
