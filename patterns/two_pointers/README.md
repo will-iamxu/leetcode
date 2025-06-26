@@ -49,3 +49,4 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | | |
+| [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
