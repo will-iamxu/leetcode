@@ -94,7 +94,9 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |
 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |
-| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |## Issues
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
+| [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
