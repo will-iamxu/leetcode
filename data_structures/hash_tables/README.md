@@ -70,7 +70,8 @@ int main() {
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | | |
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
-## Issues
+
+| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

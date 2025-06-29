@@ -29,3 +29,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
+| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
