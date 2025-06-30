@@ -30,3 +30,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
+| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |

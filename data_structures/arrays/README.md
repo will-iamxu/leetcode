@@ -97,7 +97,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
 | [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
-| [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |## Issues
+| [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
+| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
