@@ -30,7 +30,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Copy List With Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Medium | | |
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
-| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |## Issues
+| [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
