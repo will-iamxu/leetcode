@@ -98,7 +98,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
-| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |## Issues
+| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |
+| [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
