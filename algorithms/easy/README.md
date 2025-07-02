@@ -32,3 +32,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | | |
+| [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | | |

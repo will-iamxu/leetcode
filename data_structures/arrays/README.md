@@ -100,7 +100,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | | |
-| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |## Issues
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
+| [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
