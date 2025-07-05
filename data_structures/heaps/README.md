@@ -33,6 +33,48 @@ Here is a simple example of a max heap:
 
 In this example, the root node (10) is greater than its children (9 and 8), satisfying the max heap property.
 
+## Usage Example
+
+Here's how to use heaps in Python:
+
+```python
+import heapq
+
+# Min heap (default in Python)
+min_heap = []
+
+# Insert elements
+heapq.heappush(min_heap, 10)
+heapq.heappush(min_heap, 5)
+heapq.heappush(min_heap, 15)
+heapq.heappush(min_heap, 3)
+
+print(min_heap)  # [3, 5, 15, 10]
+
+# Get minimum element (peek)
+print(min_heap[0])  # 3
+
+# Remove and return minimum element
+min_element = heapq.heappop(min_heap)
+print(min_element)  # 3
+print(min_heap)     # [5, 10, 15]
+
+# Convert list to heap
+nums = [4, 1, 7, 3, 8, 5]
+heapq.heapify(nums)
+print(nums)  # [1, 3, 5, 4, 8, 7]
+
+# For max heap, use negative values
+max_heap = []
+heapq.heappush(max_heap, -10)
+heapq.heappush(max_heap, -5)
+heapq.heappush(max_heap, -15)
+
+# Get maximum element (negate the result)
+max_element = -heapq.heappop(max_heap)
+print(max_element)  # 15
+```
+
 ## Conclusion
 
 Understanding heaps is crucial for solving various algorithmic problems efficiently. This README provides a foundational overview of heaps, their properties, applications, and basic operations. For specific implementations and problems, refer to the respective code files in this directory.
@@ -41,9 +83,8 @@ Understanding heaps is crucial for solving various algorithmic problems efficien
 
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
-
-## Issues
+| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
-## Videos  
+## Videos
 *Helpful video resources for problems in this category (leave blank for now)*
