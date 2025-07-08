@@ -32,7 +32,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
 | [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
-| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |## Issues
+| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
+| [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
