@@ -71,7 +71,8 @@ int main() {
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
 
-| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |## Issues
+| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
+| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

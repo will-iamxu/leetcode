@@ -83,7 +83,8 @@ Understanding heaps is crucial for solving various algorithmic problems efficien
 
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
-| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |## Issues
+| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
+| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos
