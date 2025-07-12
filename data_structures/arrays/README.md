@@ -105,7 +105,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | | |
 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Easy | | |
 | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
-| [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |## Issues
+| [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
