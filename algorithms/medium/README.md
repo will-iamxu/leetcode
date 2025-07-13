@@ -34,7 +34,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
 | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
-| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |## Issues
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | | |## Issues
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
