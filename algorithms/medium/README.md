@@ -36,7 +36,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
 | [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | | |
-| [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | | |## Issues
+| [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | | |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |## Issues
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
