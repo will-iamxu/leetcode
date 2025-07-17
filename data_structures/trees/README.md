@@ -161,3 +161,4 @@ Feel free to explore the examples and problems provided in this directory to enh
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | | |
 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
+| [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | | |
