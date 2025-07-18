@@ -7,3 +7,4 @@ This directory contains LeetCode problems related to patterns/backtracking.
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | | |
+| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |

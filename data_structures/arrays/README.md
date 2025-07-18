@@ -108,7 +108,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
 | [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
-| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |## Issues
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
+| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
