@@ -109,7 +109,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
-| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |## Issues
+| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
