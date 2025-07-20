@@ -73,7 +73,8 @@ int main() {
 
 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
 | [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
-| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
+| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

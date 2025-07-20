@@ -10,3 +10,4 @@ This directory contains LeetCode problems related to patterns/backtracking.
 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
