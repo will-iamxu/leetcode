@@ -42,7 +42,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | | |
 | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | | |
 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
-| [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |## Issues
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
+| [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |## Issues
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 

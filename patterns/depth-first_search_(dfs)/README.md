@@ -21,3 +21,4 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | | |
 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
+| [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |

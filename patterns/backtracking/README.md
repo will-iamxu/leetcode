@@ -9,3 +9,4 @@ This directory contains LeetCode problems related to patterns/backtracking.
 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | | |
 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
+| [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
