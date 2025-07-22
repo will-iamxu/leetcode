@@ -44,7 +44,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
-| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |## Issues
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
+| [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |## Issues
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
