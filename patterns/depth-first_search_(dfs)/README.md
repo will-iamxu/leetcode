@@ -24,3 +24,4 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
+| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
