@@ -114,7 +114,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
-| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |## Issues
+| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
+| [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
