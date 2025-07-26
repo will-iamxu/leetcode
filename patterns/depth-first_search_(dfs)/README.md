@@ -11,3 +11,5 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |
 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | | |
+
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |
