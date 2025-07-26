@@ -51,7 +51,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
 
-## Issues
+
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

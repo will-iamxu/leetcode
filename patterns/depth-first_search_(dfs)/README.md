@@ -27,3 +27,5 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |
+
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |

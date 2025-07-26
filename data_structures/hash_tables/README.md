@@ -77,7 +77,8 @@ int main() {
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
 
-## Issues
+
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
