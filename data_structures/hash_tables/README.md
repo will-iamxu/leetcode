@@ -71,7 +71,13 @@ int main() {
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
 
-| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |## Issues
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |
+| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
+| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
+
+## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

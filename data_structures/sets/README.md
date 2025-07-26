@@ -7,8 +7,8 @@ This directory contains LeetCode problems related to sets.
 | Problem | Difficulty | Issues/Mistakes | Videos |
 |---------|------------|-----------------|--------|
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
-
-## Issues
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

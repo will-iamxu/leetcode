@@ -94,7 +94,28 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | | |
 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |
-| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |## Issues
+| [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
+| [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
+| [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
+| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |
+| [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | | |
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
+| [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | | |
+| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | | |
+| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Easy | | |
+| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
+| [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
+| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
+| [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
+| [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
+| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
+| [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

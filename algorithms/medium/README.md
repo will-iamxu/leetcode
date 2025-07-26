@@ -31,7 +31,27 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Medium | | |
 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | | |
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
-| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |## Issues
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
+| [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | | |
+| [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | | |
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | | |
+| [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | | |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | | |
+| [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | | |
+| [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | | |
+| [Subsets](https://leetcode.com/problems/subsets/) | Medium | | |
+| [Combination Sum](https://leetcode.com/problems/combination-sum/) | Medium | | |
+| [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | | |
+| [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
+| [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
+| [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
+| [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |
+| [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
+
+## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

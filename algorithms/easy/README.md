@@ -24,3 +24,15 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |
 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | | |
 
+
+| [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | | |
+| [Concatenation Of Array](https://leetcode.com/problems/concatenation-of-array/description/) | Easy | | |
+| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | | |
+| [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | | |
+| [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | | |
+| [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | | |
+| [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | | |
+| [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | | |
+| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | | |
+| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Easy | | |
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |

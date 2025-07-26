@@ -153,3 +153,13 @@ Feel free to explore the examples and problems provided in this directory to enh
 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Medium | | |
 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | | |
 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | | |
+
+| [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | | |
+| [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Easy | | |
+| [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | | |
+| [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | | |
+| [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Medium | | |
+| [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | | |
+| [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
+| [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | | |
+| [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Medium | | |
