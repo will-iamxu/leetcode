@@ -29,3 +29,5 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |
 
 | [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | | |
+| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | | |

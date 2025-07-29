@@ -52,7 +52,9 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
 
 
-| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |## Issues
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | | |
+| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

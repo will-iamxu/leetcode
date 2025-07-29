@@ -8,7 +8,8 @@ This directory contains LeetCode problems related to sets.
 |---------|------------|-----------------|--------|
 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | | |
 | [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
-| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |## Issues
+| [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

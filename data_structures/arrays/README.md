@@ -116,7 +116,9 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | | |
 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | | |
-| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |## Issues
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |
+| [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | | |
+| [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
