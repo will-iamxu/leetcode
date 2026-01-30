@@ -50,7 +50,7 @@ def setup_api_key():
         return
     
     # Create .env file to store the API key
-    env_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env')
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
     with open(env_path, 'w') as f:
         f.write(f"OPENAI_API_KEY={api_key}\n")
     
