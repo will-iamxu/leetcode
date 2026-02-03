@@ -78,7 +78,8 @@ int main() {
 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | | |
 
 
-| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |## Issues
+| [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

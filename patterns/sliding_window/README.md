@@ -39,7 +39,8 @@ The sliding window pattern is a powerful tool for solving a variety of problems 
 
 
 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | | |
-| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |## Issues
+| [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
