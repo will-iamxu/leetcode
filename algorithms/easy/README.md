@@ -36,3 +36,4 @@ This directory contains LeetCode problems related to algorithms/easy.
 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | Easy | | |
 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Easy | | |
 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Easy | | |
+| [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Easy | | |
