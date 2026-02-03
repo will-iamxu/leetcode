@@ -59,7 +59,8 @@ Dynamic programming is a crucial technique in algorithm design that can signific
 |---------|------------|-----------------|--------|
 
 
-| [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | | |## Issues
+| [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | | |
+| [House Robber](https://leetcode.com/problems/house-robber/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
