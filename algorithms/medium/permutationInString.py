@@ -42,3 +42,35 @@ class Solution:
         return False
 
 
+class Solution:
+    def checkInclusion(self, s1: str, s2: str) -> bool:
+        if len(s1) > len(s2):
+            return False
+
+        s1Count = {}
+        for c in s1:
+            s1Count[c] = s1Count.get(c, 0) + 1
+
+        window = {}
+        for i in range(len(s1)):
+            c = s2[i]
+            window[c] = window.get(c, 0) + 1
+        
+        if window == s1Count:
+            return True
+        
+        for r in range(len(s1), len(s2)):
+            c = s2[r]
+            window[c] = window.get(c, 0) + 1
+
+            l = r - len(s1)
+            window[s2[l]] -= 1
+
+            if window[s2[l]] == 0:
+                del window[s2[l]]
+
+            if window == s1Count: return True
+        
+        return False
+                
+        
