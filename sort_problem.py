@@ -459,6 +459,107 @@ def update_readme_with_problem(dest_dir: str, problem_title: str, problem_url: s
             f.write("|---------|------------|-----------------|--------|\n")
             f.write(f"| [{problem_title}]({problem_url}) | {difficulty.title()} | | |")
 
+def update_problems_md(base_dir: str, title: str, url: str, difficulty: str, data_structures: List[str], patterns: List[str]) -> None:
+    """
+    Insert a new problem into PROBLEMS.md in sorted order and update counts.
+    """
+    problems_path = os.path.join(base_dir, "PROBLEMS.md")
+    ds_str = ", ".join(sorted(data_structures))
+    pat_str = ", ".join(sorted(patterns))
+    new_entry_name = title.lower()
+
+    if not os.path.exists(problems_path):
+        # Create from scratch
+        with open(problems_path, "w", encoding="utf-8") as f:
+            f.write("# LeetCode Problems Completed\n\n")
+            f.write("**Total: 1 problems**\n\n")
+            f.write(f"- {difficulty.title()}: 1\n\n")
+            f.write("| # | Problem | Difficulty | Data Structures | Patterns |\n")
+            f.write("|---|---------|------------|-----------------|----------|\n")
+            f.write(f"| 1 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |\n")
+        print(f"\nCreated PROBLEMS.md with {title}.")
+        return
+
+    with open(problems_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Check if problem already exists
+    if url.rstrip("/").replace("/description", "") in content:
+        print(f"\n{title} already in PROBLEMS.md, skipping.")
+        return
+
+    lines = content.split("\n")
+    header_end = None  # line index of the |---|...| separator
+    table_rows = []    # (line_index, problem_name_lower, original_line)
+
+    for i, line in enumerate(lines):
+        if line.startswith("|---|"):
+            header_end = i
+        elif header_end is not None and line.startswith("|"):
+            # Extract problem name from the row for sorting
+            m = re.search(r"\|\s*\d+\s*\|\s*\[([^\]]+)\]", line)
+            if m:
+                table_rows.append((i, m.group(1).lower(), line))
+
+    if header_end is None:
+        print("\nCould not find table in PROBLEMS.md, skipping update.")
+        return
+
+    # Find insertion point (sorted alphabetically by name)
+    insert_idx = len(table_rows)  # default: end
+    for j, (_, name, _) in enumerate(table_rows):
+        if new_entry_name < name:
+            insert_idx = j
+            break
+
+    # Build the new row (row number is placeholder, we'll renumber)
+    new_row = f"| 0 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |"
+
+    # Insert into table_rows list
+    table_rows.insert(insert_idx, (-1, new_entry_name, new_row))
+
+    # Renumber all rows
+    renumbered = []
+    for num, (_, _, row) in enumerate(table_rows, 1):
+        renumbered.append(re.sub(r"^\|\s*\d+\s*\|", f"| {num} |", row))
+
+    # Rebuild the file: everything up to and including the separator, then rows, then remainder
+    before = lines[:header_end + 1]
+    # Find where the old table ends
+    last_table_line = table_rows[-1][0] if table_rows[-1][0] != -1 else table_rows[-2][0]
+    # Account for the original last row (before insertion)
+    orig_last = max(r[0] for r in table_rows if r[0] != -1)
+    after = lines[orig_last + 1:]
+
+    # Update the summary counts at the top
+    total = len(renumbered)
+    counts = {}
+    for _, _, row in table_rows:
+        m = re.search(r"\|\s*(Easy|Medium|Hard)\s*\|", row, re.IGNORECASE)
+        if m:
+            d = m.group(1).title()
+            counts[d] = counts.get(d, 0) + 1
+
+    # Rebuild before lines with updated counts
+    updated_before = []
+    for line in before:
+        if line.startswith("**Total:"):
+            updated_before.append(f"**Total: {total} problems**")
+        elif line.startswith("- Easy:"):
+            updated_before.append(f"- Easy: {counts.get('Easy', 0)}")
+        elif line.startswith("- Medium:"):
+            updated_before.append(f"- Medium: {counts.get('Medium', 0)}")
+        elif line.startswith("- Hard:"):
+            updated_before.append(f"- Hard: {counts.get('Hard', 0)}")
+        else:
+            updated_before.append(line)
+
+    result = "\n".join(updated_before + renumbered + after)
+    with open(problems_path, "w", encoding="utf-8") as f:
+        f.write(result)
+    print(f"\nPROBLEMS.md updated — added {title} (#{insert_idx + 1} of {total}).")
+
+
 def normalize_directory_name(name: str, category: str) -> str:
     """
     Normalize directory name based on term mapping and category.
@@ -713,7 +814,14 @@ def main():
             print(f"\nWarning: Could not delete original file '{args.file_path}': {e}")
     else:
         print("\nNo valid destinations were identified. The file was not copied.")
-    
+        return 1
+
+    # Update PROBLEMS.md with the new problem
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    ds_names = [ds.replace("_", " ").title() for ds in normalized_data_structures]
+    pat_names = [p.replace("-", " ").replace("_", " ").title() for p in normalized_patterns]
+    update_problems_md(base_dir, problem_title, args.leetcode_url, difficulty or "easy", ds_names, pat_names)
+
     return 0
 
 if __name__ == "__main__":
