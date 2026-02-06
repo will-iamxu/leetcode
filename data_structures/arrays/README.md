@@ -123,7 +123,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | | |
 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | | |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Easy | | |
-| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |## Issues
+| [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
