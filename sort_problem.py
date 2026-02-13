@@ -188,12 +188,15 @@ TERM_MAPPING = {
     "hash map": "hash table",
     "hashmap": "hash table",
     "hashtable": "hash table",
+    "hash table/hash map/dictionary": "hash table",
+    "hash table/hash map": "hash table",
     "dictionary": "hash table",
     "map": "hash table",
     
     "linked-list": "linked list",
     
     "arrays": "array",
+    "array/list": "array",
     "vector": "array",
     "list": "array",
     
@@ -210,6 +213,7 @@ TERM_MAPPING = {
     "grid": "matrix",
 
     "priority queue": "heap",
+    "heap/priority queue": "heap",
     "min heap": "heap",
     "max heap": "heap",
     
@@ -330,14 +334,17 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     
     2. What data structures are primarily used in this solution?
        Common examples include:
-       - array/list
+       - array
        - linked list
-       - tree (including binary tree, BST, trie)
+       - tree (including binary tree, BST)
+       - trie
        - graph
-       - hash table/hash map/dictionary
-       - heap/priority queue
+       - hash table
+       - heap
        - stack
        - queue
+       - string
+       - matrix
        
     3. What algorithm patterns are used in this solution?
        Common examples include:
