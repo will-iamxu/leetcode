@@ -59,7 +59,9 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | | |
 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | | |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |## Issues
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
+| [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
+| [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

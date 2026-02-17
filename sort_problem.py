@@ -151,11 +151,14 @@ DIFFICULTY_DIRS = {
 
 DATA_STRUCTURE_DIRS = {
     "array": "data_structures/arrays",
-    "linked list": "data_structures/linked_lists", 
+    "linked list": "data_structures/linked_lists",
     "tree": "data_structures/trees",
     "graph": "data_structures/graphs",
     "hash table": "data_structures/hash_tables",
-    "heap": "data_structures/heaps"
+    "heap": "data_structures/heaps",
+    "trie": "data_structures/tries",
+    "string": "data_structures/strings",
+    "matrix": "data_structures/matrices"
 }
 
 PATTERN_DIRS = {
@@ -164,13 +167,18 @@ PATTERN_DIRS = {
     "dynamic programming": "patterns/dynamic_programming",
     "binary search": "patterns/binary_search",
     "depth-first search": "patterns/depth-first_search_(dfs)",
-    "breadth-first search": "patterns/breadth_first_search_(bfs)",
+    "breadth-first search": "patterns/breadth-first_search_(bfs)",
     "backtracking": "patterns/backtracking",
     "greedy": "patterns/greedy",
     "divide and conquer": "patterns/divide_and_conquer",
     "monotonic stack": "patterns/monotonic_stack",
     "prefix sum": "patterns/prefix_sum",
-    "suffix sum": "patterns/suffix_sum"
+    "suffix sum": "patterns/suffix_sum",
+    "bit manipulation": "patterns/bit_manipulation",
+    "intervals": "patterns/intervals",
+    "topological sort": "patterns/topological_sort",
+    "union find": "patterns/union_find",
+    "fast slow pointers": "patterns/fast_slow_pointers"
 }
 
 # Define mappings to standardize terminology between similar concepts
@@ -180,12 +188,15 @@ TERM_MAPPING = {
     "hash map": "hash table",
     "hashmap": "hash table",
     "hashtable": "hash table",
+    "hash table/hash map/dictionary": "hash table",
+    "hash table/hash map": "hash table",
     "dictionary": "hash table",
     "map": "hash table",
     
     "linked-list": "linked list",
     
     "arrays": "array",
+    "array/list": "array",
     "vector": "array",
     "list": "array",
     
@@ -194,9 +205,15 @@ TERM_MAPPING = {
     "bst": "tree",
     "avl tree": "tree",
     "red-black tree": "tree",
-    "trie": "tree",  # Consider if you want trie as a separate structure
-    
+
+    "prefix tree": "trie",
+
+    "2d array": "matrix",
+    "2d-array": "matrix",
+    "grid": "matrix",
+
     "priority queue": "heap",
+    "heap/priority queue": "heap",
     "min heap": "heap",
     "max heap": "heap",
     
@@ -224,18 +241,40 @@ TERM_MAPPING = {
     "breadth first search": "breadth-first search",
     "breadth-first-search": "breadth-first search",
     "breadth_first_search": "breadth-first search",
+
+    # Other pattern aliases
+    "bit": "bit manipulation",
+    "bitwise": "bit manipulation",
+    "bitmask": "bit manipulation",
+    "bitmasking": "bit manipulation",
+
+    "interval": "intervals",
+    "merge intervals": "intervals",
+
+    "topo sort": "topological sort",
+    "topological sorting": "topological sort",
+    "kahn's algorithm": "topological sort",
+
+    "disjoint set": "union find",
+    "union-find": "union find",
+    "dsu": "union find",
+
+    "floyd's cycle": "fast slow pointers",
+    "tortoise and hare": "fast slow pointers",
+    "cycle detection": "fast slow pointers",
 }
 
 # Define which terms should be treated explicitly as data structures vs patterns
 # This helps when a term could be classified as either
 DATA_STRUCTURE_TYPES = {
-    "array", "linked list", "tree", "graph", "hash table", "heap", "stack", "queue", "trie"
+    "array", "linked list", "tree", "graph", "hash table", "heap", "stack", "queue", "trie", "string", "matrix"
 }
 
 PATTERN_TYPES = {
-    "two pointers", "sliding window", "dynamic programming", "binary search", 
+    "two pointers", "sliding window", "dynamic programming", "binary search",
     "greedy", "backtracking", "depth-first search", "breadth-first search",
-    "divide and conquer", "monotonic stack", "prefix sum", "suffix sum"
+    "divide and conquer", "monotonic stack", "prefix sum", "suffix sum",
+    "bit manipulation", "intervals", "topological sort", "union find", "fast slow pointers"
 }
 
 def get_problem_info_from_leetcode(url: str) -> Dict:
@@ -295,14 +334,17 @@ def classify_with_openai(api_key: str, file_path: str, problem_url: str) -> Tupl
     
     2. What data structures are primarily used in this solution?
        Common examples include:
-       - array/list
+       - array
        - linked list
-       - tree (including binary tree, BST, trie)
+       - tree (including binary tree, BST)
+       - trie
        - graph
-       - hash table/hash map/dictionary
-       - heap/priority queue
+       - hash table
+       - heap
        - stack
        - queue
+       - string
+       - matrix
        
     3. What algorithm patterns are used in this solution?
        Common examples include:
@@ -776,7 +818,9 @@ def main():
             print(f"Creating new algorithm pattern directory for '{pattern}': {pattern_path}")
       # Get problem title from URL
     problem_info = get_problem_info_from_leetcode(args.leetcode_url)
-    problem_title = problem_info["title"] or os.path.basename(args.file_path).replace(".cpp", "").replace("_", " ").title()
+    # Use splitext to properly remove any file extension, then replace underscores and title case
+    filename_without_ext = os.path.splitext(os.path.basename(args.file_path))[0]
+    problem_title = problem_info["title"] or filename_without_ext.replace("_", " ").replace("-", " ").title()
       # Copy the file to all destination directories
     if destinations:
         copied_to = copy_file_to_destinations(args.file_path, destinations, problem_title, args.leetcode_url, difficulty or "easy")
