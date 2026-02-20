@@ -505,101 +505,114 @@ def update_problems_md(base_dir: str, title: str, url: str, difficulty: str, dat
     """
     Insert a new problem into PROBLEMS.md in sorted order and update counts.
     """
-    problems_path = os.path.join(base_dir, "PROBLEMS.md")
-    ds_str = ", ".join(sorted(data_structures))
-    pat_str = ", ".join(sorted(patterns))
-    new_entry_name = title.lower()
+    try:
+        problems_path = os.path.join(base_dir, "PROBLEMS.md")
+        ds_str = ", ".join(sorted(data_structures))
+        pat_str = ", ".join(sorted(patterns))
+        new_entry_name = title.lower()
 
-    if not os.path.exists(problems_path):
-        # Create from scratch
-        with open(problems_path, "w", encoding="utf-8") as f:
-            f.write("# LeetCode Problems Completed\n\n")
-            f.write("**Total: 1 problems**\n\n")
-            f.write(f"- {difficulty.title()}: 1\n\n")
-            f.write("| # | Problem | Difficulty | Data Structures | Patterns |\n")
-            f.write("|---|---------|------------|-----------------|----------|\n")
-            f.write(f"| 1 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |\n")
-        print(f"\nCreated PROBLEMS.md with {title}.")
-        return
+        if not os.path.exists(problems_path):
+            # Create from scratch
+            with open(problems_path, "w", encoding="utf-8") as f:
+                f.write("# LeetCode Problems Completed\n\n")
+                f.write("**Total: 1 problems**\n\n")
+                f.write(f"- {difficulty.title()}: 1\n\n")
+                f.write("| # | Problem | Difficulty | Data Structures | Patterns |\n")
+                f.write("|---|---------|------------|-----------------|----------|\n")
+                f.write(f"| 1 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |\n")
+            print(f"\nCreated PROBLEMS.md with {title}.")
+            return
 
-    with open(problems_path, "r", encoding="utf-8") as f:
-        content = f.read()
+        with open(problems_path, "r", encoding="utf-8") as f:
+            content = f.read()
 
-    # Check if problem already exists
-    if url.rstrip("/").replace("/description", "") in content:
-        print(f"\n{title} already in PROBLEMS.md, skipping.")
-        return
+        # Check if problem already exists (match on URL slug only, not full substring)
+        url_slug = url.rstrip("/").replace("/description", "").rstrip("/").split("/")[-1]
+        if url_slug and len(url_slug) > 3 and url_slug in content:
+            print(f"\n{title} already in PROBLEMS.md, skipping.")
+            return
 
-    lines = content.split("\n")
-    header_end = None  # line index of the |---|...| separator
-    table_rows = []    # (line_index, problem_name_lower, original_line)
+        lines = content.split("\n")
+        header_end = None  # line index of the |---|...| separator
+        table_rows = []    # (line_index, problem_name_lower, original_line)
 
-    for i, line in enumerate(lines):
-        if line.startswith("|---|"):
-            header_end = i
-        elif header_end is not None and line.startswith("|"):
-            # Extract problem name from the row for sorting
-            m = re.search(r"\|\s*\d+\s*\|\s*\[([^\]]+)\]", line)
+        for i, line in enumerate(lines):
+            if line.startswith("|---|"):
+                header_end = i
+            elif header_end is not None and line.startswith("|"):
+                # Extract problem name from the row for sorting
+                m = re.search(r"\|\s*\d+\s*\|\s*\[([^\]]+)\]", line)
+                if m:
+                    table_rows.append((i, m.group(1).lower(), line))
+
+        if header_end is None:
+            print("\nERROR: Could not find table in PROBLEMS.md — update skipped.")
+            return
+
+        if not table_rows:
+            print("\nERROR: No rows found in PROBLEMS.md table — update skipped.")
+            return
+
+        # Find insertion point (sorted alphabetically by name)
+        insert_idx = len(table_rows)  # default: end
+        for j, (_, name, _) in enumerate(table_rows):
+            if new_entry_name < name:
+                insert_idx = j
+                break
+
+        # Build the new row (row number is placeholder, we'll renumber)
+        new_row = f"| 0 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |"
+
+        # Insert into table_rows list
+        table_rows.insert(insert_idx, (-1, new_entry_name, new_row))
+
+        # Renumber all rows
+        renumbered = []
+        for num, (_, _, row) in enumerate(table_rows, 1):
+            renumbered.append(re.sub(r"^\|\s*\d+\s*\|", f"| {num} |", row))
+
+        # Rebuild the file: everything up to and including the separator, then rows, then remainder
+        before = lines[:header_end + 1]
+        orig_last = max(r[0] for r in table_rows if r[0] != -1)
+        after = lines[orig_last + 1:]
+
+        # Update the summary counts at the top
+        total = len(renumbered)
+        counts = {}
+        for _, _, row in table_rows:
+            m = re.search(r"\|\s*(Easy|Medium|Hard)\s*\|", row, re.IGNORECASE)
             if m:
-                table_rows.append((i, m.group(1).lower(), line))
+                d = m.group(1).title()
+                counts[d] = counts.get(d, 0) + 1
 
-    if header_end is None:
-        print("\nCould not find table in PROBLEMS.md, skipping update.")
-        return
+        # Rebuild before lines with updated counts
+        updated_before = []
+        for line in before:
+            if line.startswith("**Total:"):
+                updated_before.append(f"**Total: {total} problems**")
+            elif line.startswith("- Easy:"):
+                updated_before.append(f"- Easy: {counts.get('Easy', 0)}")
+            elif line.startswith("- Medium:"):
+                updated_before.append(f"- Medium: {counts.get('Medium', 0)}")
+            elif line.startswith("- Hard:"):
+                updated_before.append(f"- Hard: {counts.get('Hard', 0)}")
+            else:
+                updated_before.append(line)
 
-    # Find insertion point (sorted alphabetically by name)
-    insert_idx = len(table_rows)  # default: end
-    for j, (_, name, _) in enumerate(table_rows):
-        if new_entry_name < name:
-            insert_idx = j
-            break
+        result = "\n".join(updated_before + renumbered + after)
+        with open(problems_path, "w", encoding="utf-8") as f:
+            f.write(result)
 
-    # Build the new row (row number is placeholder, we'll renumber)
-    new_row = f"| 0 | [{title}]({url}) | {difficulty.title()} | {ds_str} | {pat_str} |"
-
-    # Insert into table_rows list
-    table_rows.insert(insert_idx, (-1, new_entry_name, new_row))
-
-    # Renumber all rows
-    renumbered = []
-    for num, (_, _, row) in enumerate(table_rows, 1):
-        renumbered.append(re.sub(r"^\|\s*\d+\s*\|", f"| {num} |", row))
-
-    # Rebuild the file: everything up to and including the separator, then rows, then remainder
-    before = lines[:header_end + 1]
-    # Find where the old table ends
-    last_table_line = table_rows[-1][0] if table_rows[-1][0] != -1 else table_rows[-2][0]
-    # Account for the original last row (before insertion)
-    orig_last = max(r[0] for r in table_rows if r[0] != -1)
-    after = lines[orig_last + 1:]
-
-    # Update the summary counts at the top
-    total = len(renumbered)
-    counts = {}
-    for _, _, row in table_rows:
-        m = re.search(r"\|\s*(Easy|Medium|Hard)\s*\|", row, re.IGNORECASE)
-        if m:
-            d = m.group(1).title()
-            counts[d] = counts.get(d, 0) + 1
-
-    # Rebuild before lines with updated counts
-    updated_before = []
-    for line in before:
-        if line.startswith("**Total:"):
-            updated_before.append(f"**Total: {total} problems**")
-        elif line.startswith("- Easy:"):
-            updated_before.append(f"- Easy: {counts.get('Easy', 0)}")
-        elif line.startswith("- Medium:"):
-            updated_before.append(f"- Medium: {counts.get('Medium', 0)}")
-        elif line.startswith("- Hard:"):
-            updated_before.append(f"- Hard: {counts.get('Hard', 0)}")
+        # Verify the entry was actually written
+        with open(problems_path, "r", encoding="utf-8") as f:
+            written = f.read()
+        if title.lower() not in written.lower():
+            print(f"\nERROR: PROBLEMS.md was written but '{title}' not found in it — check the file!")
         else:
-            updated_before.append(line)
+            print(f"\nPROBLEMS.md updated — added {title} (#{insert_idx + 1} of {total}).")
 
-    result = "\n".join(updated_before + renumbered + after)
-    with open(problems_path, "w", encoding="utf-8") as f:
-        f.write(result)
-    print(f"\nPROBLEMS.md updated — added {title} (#{insert_idx + 1} of {total}).")
+    except Exception as e:
+        print(f"\nERROR: Failed to update PROBLEMS.md for '{title}': {e}")
 
 
 def normalize_directory_name(name: str, category: str) -> str:
