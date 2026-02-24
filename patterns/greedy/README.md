@@ -9,3 +9,4 @@ This directory contains LeetCode problems related to greedy.
 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | | |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | | |
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |

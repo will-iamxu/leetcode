@@ -61,7 +61,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
-| [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | | |## Issues
+| [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | | |
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

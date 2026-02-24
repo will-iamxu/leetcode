@@ -126,7 +126,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
-| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | | |## Issues
+| [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | | |
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

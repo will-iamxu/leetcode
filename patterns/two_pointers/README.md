@@ -54,3 +54,4 @@ The two pointers pattern is a versatile and efficient technique that can signifi
 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | | |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | | |
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |
