@@ -90,5 +90,6 @@ Understanding heaps is crucial for solving various algorithmic problems efficien
 
 
 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | | |
-| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |## Videos
+| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |
+| [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | Hard | | |## Videos
 *Helpful video resources for problems in this category (leave blank for now)*

@@ -1,10 +1,10 @@
 # LeetCode Problems Completed
 
-**Total: 101 problems**
+**Total: 102 problems**
 
 - Easy: 31
 - Medium: 66
-- Hard: 4
+- Hard: 5
 
 | # | Problem | Difficulty | Data Structures | Patterns |
 |---|---------|------------|-----------------|----------|
@@ -35,79 +35,80 @@
 | 25 | [Diameter Of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/description/) | Easy | Trees |  |
 | 26 | [Encode And Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Medium | Strings |  |
 | 27 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | Medium | Stacks |  |
-| 28 | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium | Arrays | Binary Search |
-| 29 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | Arrays, Linked Lists | Two Pointers |
-| 30 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy | Arrays |  |
-| 31 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | Arrays |  |
-| 32 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Arrays, Stacks | Backtracking |
-| 33 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Arrays, Hash Tables |  |
-| 34 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | Arrays | Dynamic Programming |
-| 35 | [Houserobberii](.) | Medium | Array | Dynamic Programming |
-| 36 | [Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | Tries |  |
-| 37 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Medium | Arrays | Greedy |
-| 38 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
-| 39 | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | Array | Greedy, Two Pointers |
-| 40 | [Jumpgame](.) | Medium | Array | Greedy |
-| 41 | [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | Array, Heap |  |
-| 42 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium | Arrays | Binary Search |
-| 43 | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | Arrays, Heaps |  |
-| 44 | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | Trees | Depth First Search (Dfs), Monotonic Stack |
-| 45 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Arrays, Stacks | Monotonic Stack |
-| 46 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | Arrays, Hash Tables | Backtracking, Depth First Search (Dfs) |
-| 47 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | Linked Lists | Two Pointers |
-| 48 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | Arrays |  |
-| 49 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Arrays, Hash Tables |  |
-| 50 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | Array | Dynamic Programming |
-| 51 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | Array | Two Pointers |
-| 52 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | Hash Tables | Sliding Window, Two Pointers |
-| 53 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | Sets | Sliding Window, Two Pointers |
-| 54 | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | Trees | Depth First Search (Dfs) |
-| 55 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | Hash Tables |  |
-| 56 | [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | Arrays, Hash Tables | Depth First Search (Dfs) |
-| 57 | [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
-| 58 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | Array | Greedy |
-| 59 | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | Arrays, Heaps | Greedy |
-| 60 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Array | Greedy |
-| 61 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Arrays, Linked Lists | Divide And Conquer, Two Pointers |
-| 62 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked Lists | Two Pointers |
-| 63 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Stacks |  |
-| 64 | [Mincostclimbingstairs](.) | Easy | Array | Dynamic Programming |
-| 65 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | Hash Tables | Sliding Window, Two Pointers |
-| 66 | [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Arrays | Greedy |
-| 67 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | Arrays | Depth First Search (Dfs) |
-| 68 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | Arrays, Sets | Depth First Search (Dfs) |
-| 69 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
-| 70 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Arrays | Sliding Window |
-| 71 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
-| 72 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Arrays | Prefix Sum, Suffix Sum |
-| 73 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Arrays | Two Pointers |
-| 74 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | Linked Lists | Two Pointers |
-| 75 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | Two Pointers |
-| 76 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked Lists | Two Pointers |
-| 77 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium | Linked Lists | Two Pointers |
-| 78 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | Hash Tables, Heaps | Greedy |
-| 79 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked Lists | Two Pointers |
-| 80 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Arrays | Two Pointers |
-| 81 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | Arrays, Queues | Breadth First Search (Bfs) |
-| 82 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Trees | Depth First Search (Dfs) |
-| 83 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Arrays | Binary Search |
-| 84 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Arrays | Binary Search |
-| 85 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
-| 86 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
-| 87 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
-| 88 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
-| 89 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
-| 90 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
-| 91 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
-| 92 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
-| 93 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
-| 94 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
-| 95 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
-| 96 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
-| 97 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
-| 98 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
-| 99 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
-| 100 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
-| 101 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 28 | [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | Hard | Heap |  |
+| 29 | [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) | Medium | Arrays | Binary Search |
+| 30 | [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | Medium | Arrays, Linked Lists | Two Pointers |
+| 31 | [Find Words Containing Character](https://leetcode.com/problems/find-words-containing-character/description/?envType=daily-question) | Easy | Arrays |  |
+| 32 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/description/) | Easy | Arrays |  |
+| 33 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) | Medium | Arrays, Stacks | Backtracking |
+| 34 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Medium | Arrays, Hash Tables |  |
+| 35 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | Arrays | Dynamic Programming |
+| 36 | [Houserobberii](.) | Medium | Array | Dynamic Programming |
+| 37 | [Implement Trie](https://leetcode.com/problems/implement-trie-prefix-tree/) | Medium | Tries |  |
+| 38 | [Insert Interval](https://leetcode.com/problems/insert-interval/) | Medium | Arrays | Greedy |
+| 39 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
+| 40 | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | Array | Greedy, Two Pointers |
+| 41 | [Jumpgame](.) | Medium | Array | Greedy |
+| 42 | [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | Array, Heap |  |
+| 43 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) | Medium | Arrays | Binary Search |
+| 44 | [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Medium | Arrays, Heaps |  |
+| 45 | [Kth Smallest Element In A Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Medium | Trees | Depth First Search (Dfs), Monotonic Stack |
+| 46 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | Arrays, Stacks | Monotonic Stack |
+| 47 | [Letter Combinations Of A Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | Medium | Arrays, Hash Tables | Backtracking, Depth First Search (Dfs) |
+| 48 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | Easy | Linked Lists | Two Pointers |
+| 49 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | Easy | Arrays |  |
+| 50 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Medium | Arrays, Hash Tables |  |
+| 51 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | Array | Dynamic Programming |
+| 52 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) | Medium | Array | Two Pointers |
+| 53 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) | Medium | Hash Tables | Sliding Window, Two Pointers |
+| 54 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Medium | Sets | Sliding Window, Two Pointers |
+| 55 | [Lowest Common Ancestor Of A Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Medium | Trees | Depth First Search (Dfs) |
+| 56 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Easy | Hash Tables |  |
+| 57 | [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | Arrays, Hash Tables | Depth First Search (Dfs) |
+| 58 | [Maximum Depth Of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
+| 59 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | Array | Greedy |
+| 60 | [Meeting Rooms Ii](https://leetcode.com/problems/meeting-rooms-ii/) | Medium | Arrays, Heaps | Greedy |
+| 61 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | Array | Greedy |
+| 62 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | Arrays, Linked Lists | Divide And Conquer, Two Pointers |
+| 63 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | Easy | Linked Lists | Two Pointers |
+| 64 | [Min Stack](https://leetcode.com/problems/min-stack/) | Easy | Stacks |  |
+| 65 | [Mincostclimbingstairs](.) | Easy | Array | Dynamic Programming |
+| 66 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | Hash Tables | Sliding Window, Two Pointers |
+| 67 | [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | Arrays | Greedy |
+| 68 | [Number Of Islands](https://leetcode.com/problems/number-of-islands/description/) | Medium | Arrays | Depth First Search (Dfs) |
+| 69 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | Arrays, Sets | Depth First Search (Dfs) |
+| 70 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 71 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Arrays | Sliding Window |
+| 72 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 73 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Arrays | Prefix Sum, Suffix Sum |
+| 74 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Arrays | Two Pointers |
+| 75 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | Linked Lists | Two Pointers |
+| 76 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | Two Pointers |
+| 77 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked Lists | Two Pointers |
+| 78 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium | Linked Lists | Two Pointers |
+| 79 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | Hash Tables, Heaps | Greedy |
+| 80 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked Lists | Two Pointers |
+| 81 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Arrays | Two Pointers |
+| 82 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | Arrays, Queues | Breadth First Search (Bfs) |
+| 83 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Trees | Depth First Search (Dfs) |
+| 84 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Arrays | Binary Search |
+| 85 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Arrays | Binary Search |
+| 86 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
+| 87 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 88 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
+| 89 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
+| 90 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
+| 91 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
+| 92 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
+| 93 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
+| 94 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
+| 95 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
+| 96 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
+| 97 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
+| 98 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
+| 99 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
+| 100 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
+| 101 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
+| 102 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
 
 *Generated by list_problems.py*
