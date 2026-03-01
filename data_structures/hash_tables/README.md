@@ -79,7 +79,8 @@ int main() {
 
 
 | [Max Area Of Island](https://leetcode.com/problems/max-area-of-island/) | Medium | | |
-| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |## Issues
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |
+| [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

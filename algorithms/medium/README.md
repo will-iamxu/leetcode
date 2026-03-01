@@ -62,7 +62,9 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
 | [Non Overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) | Medium | | |
-| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |## Issues
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |
+| [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | | |
+| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

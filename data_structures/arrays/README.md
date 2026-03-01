@@ -127,7 +127,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | | |
-| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |## Issues
+| [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |
+| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
