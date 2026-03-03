@@ -128,7 +128,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Medium | | |
 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | Easy | | |
 | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |
-| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |## Issues
+| [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

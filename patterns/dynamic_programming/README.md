@@ -62,7 +62,9 @@ Dynamic programming is a crucial technique in algorithm design that can signific
 | [Coin Change](https://leetcode.com/problems/coin-change/) | Medium | | |
 | [House Robber](https://leetcode.com/problems/house-robber/) | Medium | | |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Easy | | |
-| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |## Issues
+| [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
+| [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
+| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
