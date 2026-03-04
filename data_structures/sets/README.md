@@ -10,7 +10,8 @@ This directory contains LeetCode problems related to sets.
 | [Contains Duplicate Ii](https://leetcode.com/problems/contains-duplicate-ii/) | Medium | | |
 | [Design Twitter](https://leetcode.com/problems/design-twitter/description/) | Medium | | |
 | [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) | Medium | | |
-| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |## Issues
+| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |
+| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

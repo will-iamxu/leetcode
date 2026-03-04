@@ -67,7 +67,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |
 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Medium | | |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
-| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |## Issues
+| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |
+| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
