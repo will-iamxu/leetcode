@@ -65,7 +65,8 @@ Dynamic programming is a crucial technique in algorithm design that can signific
 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | Medium | | |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |
-| [Maximum Difference Score In A Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/description/?envType=company) | Medium | | |## Issues
+| [Maximum Difference Score In A Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/description/?envType=company) | Medium | | |
+| [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

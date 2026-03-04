@@ -130,7 +130,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Jump Game Ii](https://leetcode.com/problems/jump-game-ii/) | Medium | | |
 | [K Closest Points To Origin](https://leetcode.com/problems/k-closest-points-to-origin/description/) | Medium | | |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
-| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |## Issues
+| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |
+| [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

@@ -10,7 +10,8 @@ This directory contains LeetCode problems related to algorithms/hard.
 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) | Hard | | |
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |
-| [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | Hard | | |## Issues
+| [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | Hard | | |
+| [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
