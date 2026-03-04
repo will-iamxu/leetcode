@@ -68,7 +68,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/description/) | Medium | | |
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | Medium | | |
-| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |## Issues
+| [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |
+| [Maximum Difference Score In A Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/description/?envType=company) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
