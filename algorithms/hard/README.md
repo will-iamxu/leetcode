@@ -11,7 +11,8 @@ This directory contains LeetCode problems related to algorithms/hard.
 | [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) | Hard | | |
 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hard | | |
 | [Find Median From Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/) | Hard | | |
-| [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |## Issues
+| [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |
+| [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
