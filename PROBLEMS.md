@@ -1,9 +1,9 @@
 # LeetCode Problems Completed
 
-**Total: 109 problems**
+**Total: 110 problems**
 
 - Easy: 31
-- Medium: 71
+- Medium: 72
 - Hard: 7
 
 | # | Problem | Difficulty | Data Structures | Patterns |
@@ -99,23 +99,24 @@
 | 89 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Trees | Depth First Search (Dfs) |
 | 90 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Arrays | Binary Search |
 | 91 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Arrays | Binary Search |
-| 92 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
-| 93 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/) | Hard | Array, String | Dynamic Programming |
-| 94 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
-| 95 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
-| 96 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
-| 97 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
-| 98 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
-| 99 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
-| 100 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
-| 101 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
-| 102 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
-| 103 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
-| 104 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
-| 105 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
-| 106 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
-| 107 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
-| 108 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
-| 109 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 92 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | Queue, String, Tree | Breadth First Search (Bfs) |
+| 93 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
+| 94 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/) | Hard | Array, String | Dynamic Programming |
+| 95 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 96 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
+| 97 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
+| 98 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
+| 99 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
+| 100 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
+| 101 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
+| 102 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
+| 103 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
+| 104 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
+| 105 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
+| 106 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
+| 107 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
+| 108 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
+| 109 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
+| 110 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
 
 *Generated by list_problems.py*

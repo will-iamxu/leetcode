@@ -10,3 +10,4 @@ This directory contains LeetCode problems related to queues.
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | | |
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | | |
 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | | |
+| [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
