@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post-NeetCode 150 Problem List</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0e0f;
+    --bg2: #161618;
+    --bg3: #1e1e21;
+    --border: rgba(255,255,255,0.08);
+    --border2: rgba(255,255,255,0.14);
+    --text: #e8e6e0;
+    --muted: #888580;
+    --hint: #555250;
+    --blue: #4a9eff;
+    --blue-bg: rgba(74,158,255,0.1);
+    --teal: #3ecf8e;
+    --teal-bg: rgba(62,207,142,0.1);
+    --amber: #f5a623;
+    --amber-bg: rgba(245,166,35,0.1);
+    --coral: #f06449;
+    --coral-bg: rgba(240,100,73,0.1);
+    --green: #5cb85c;
+    --green-bg: rgba(92,184,92,0.1);
+    --font: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .section { margin-bottom: 36px; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+  }
+
+  .b-review { background: var(--blue-bg); color: var(--blue); border: 1px solid rgba(74,158,255,0.2); }
+  .b-new    { background: var(--teal-bg); color: var(--teal); border: 1px solid rgba(62,207,142,0.2); }
+  .b-hard   { background: var(--coral-bg); color: var(--coral); border: 1px solid rgba(240,100,73,0.2); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead tr {
+    background: var(--bg3);
+    border-bottom: 1px solid var(--border2);
+  }
+
+  th {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--hint);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px 16px;
+    text-align: left;
+  }
+
+  td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr:hover td { background: var(--bg3); }
+
+  .prob {
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 2px;
+    font-size: 13.5px;
+  }
+
+  .pattern-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--hint);
+  }
+
+  .why {
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .diff {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+  }
+
+  .m { background: var(--amber-bg);  color: var(--amber); border: 1px solid rgba(245,166,35,0.2); }
+  .h { background: var(--coral-bg);  color: var(--coral); border: 1px solid rgba(240,100,73,0.2); }
+  .e { background: var(--green-bg);  color: var(--green); border: 1px solid rgba(92,184,92,0.2); }
+
+  .col-problem    { width: 28%; }
+  .col-diff       { width: 7%; }
+  .col-why        { width: 35%; }
+  .col-intuition  { width: 30%; }
+
+  .intuition {
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .intuition-empty {
+    color: var(--hint);
+    font-family: var(--mono);
+    font-size: 11px;
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--hint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="eyebrow">William Xu — LeetCode</div>
+    <h1>Post-NeetCode 150 Problem List</h1>
+    <p class="subtitle">Review targets + next problems after completing NeetCode 150</p>
+  </header>
+
+  <!-- SECTION 1 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">Must-review from NeetCode 150</span>
+      <span class="badge b-review">High interview frequency</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-problem">Problem</th>
+          <th class="col-diff">Diff</th>
+          <th class="col-why">Why it matters</th>
+          <th class="col-intuition">Intuition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="prob">Trapping Rain Water</div><div class="pattern-tag">Two pointers</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">Most commonly asked "hard" at FAANG new grad. Two-pointer O(1) space solution is the expected answer, not the stack version.</td>
+          <td class="intuition">Move the smaller side inward. If the current height isn't a new max, the difference between it and the running max is trapped water.</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Minimum Window Substring</div><div class="pattern-tag">Sliding window</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">The canonical hard sliding window. If you can do this cleanly, every other window problem is trivial.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">LRU Cache</div><div class="pattern-tag">Linked list + hashmap</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Asked constantly at mid-tier and FAANG alike. Tests whether you can build a real data structure, not just traverse one.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Word Search</div><div class="pattern-tag">Backtracking / grid DFS</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Grid DFS with in-place visited marking. Very commonly asked, easy to mess up the backtracking undo step.</td>
+          <td class="intuition">DFS from every cell that matches word[0]. Expand to neighbors matching the next character, marking cells '#' to block revisits. Restore on backtrack.</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Construct Binary Tree from Preorder + Inorder</div><div class="pattern-tag">Tree + divide & conquer</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Requires actually understanding traversal orders. If you can explain why it works, you'll impress interviewers.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Merge K Sorted Lists</div><div class="pattern-tag">Heap</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">Canonical heap problem. Know both the heap approach and the divide-and-conquer merge approach.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Course Schedule II</div><div class="pattern-tag">Topological sort</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Topo sort is tested more often than most graph algorithms. Have both Kahn's and DFS versions clean.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Word Break</div><div class="pattern-tag">1-D DP</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Classic DP + string. Asked by Google, Meta, Amazon. The "can I reach this state" DP framing appears everywhere.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Longest Increasing Subsequence</div><div class="pattern-tag">1-D DP / binary search</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Know the O(n²) DP AND the O(n log n) patience sort. The latter comes up in follow-ups.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Coin Change</div><div class="pattern-tag">1-D DP (unbounded knapsack)</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">The "hello world" of DP. Interviewers use it to probe whether you understand iteration order and state definition.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Binary Tree Maximum Path Sum</div><div class="pattern-tag">Tree DFS</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">The hardest pure tree problem in 150. Requires tracking two different values (global max vs return value to parent).</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Search in Rotated Sorted Array</div><div class="pattern-tag">Binary search</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Gets asked constantly. The key insight (which half is sorted) trips people up under pressure — drill it.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">Next problems to add — medium priority</span>
+      <span class="badge b-new">High frequency, not in 150</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-problem">Problem</th>
+          <th class="col-diff">Diff</th>
+          <th class="col-why">Why / pattern it teaches</th>
+          <th class="col-intuition">Intuition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="prob">Maximum Subarray (D&C follow-up)</div><div class="pattern-tag">DP / divide & conquer</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">You know Kadane's. Learn to explain the D&C O(n log n) version — it's a common follow-up at Google.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Find All Anagrams in a String</div><div class="pattern-tag">Sliding window</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Fixed-window + frequency map. Variant of Permutation in String but returns all positions — tests thoroughness.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Subarray Sum Equals K</div><div class="pattern-tag">Prefix sum + hashmap</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">The prefix sum + hashmap trick is one of the most underrated patterns. Asked constantly at Amazon/Meta.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Random Pick with Weight</div><div class="pattern-tag">Prefix sum + binary search</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Combines two concepts cleanly. Common at Google. Tests whether you can apply prefix sums beyond "sum queries".</td>
+          <td class="intuition">Build a prefix sum array — each weight becomes a range. Pick a random target in [0, total], then binary search for which range it falls in.</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Flatten Binary Tree to Linked List</div><div class="pattern-tag">Tree / Morris traversal</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">In-place tree manipulation. Follow-up: can you do it O(1) space? Good for showing depth on tree problems.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Decode String</div><div class="pattern-tag">Stack</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Stack problem that's NOT just bracket matching. Tests whether you know when to push/pop complex state.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Next Permutation</div><div class="pattern-tag">Array / math</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Appears at Google/Meta. No obvious pattern — you have to derive the algorithm. Good for demonstrating problem-solving process.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Path Sum III</div><div class="pattern-tag">Tree + prefix sum</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Prefix sum applied to a tree — a hybrid that trips people up. Once you see it, it's satisfying.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Kth Largest Element in an Array</div><div class="pattern-tag">Quickselect</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">Know the heap solution AND quickselect O(n) avg. Interviewers almost always ask for the O(n) follow-up.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Maximum Width of Binary Tree</div><div class="pattern-tag">BFS / tree indexing</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">BFS with positional indexing. A non-obvious use of level-order traversal.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 3 -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-title">Stretch problems — high signal if you can do them</span>
+      <span class="badge b-hard">Hard / senior signal</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-problem">Problem</th>
+          <th class="col-diff">Diff</th>
+          <th class="col-why">Why it's worth it</th>
+          <th class="col-intuition">Intuition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="prob">Sliding Window Maximum</div><div class="pattern-tag">Monotonic deque</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">Teaches the monotonic deque — a pattern that appears in ~5 other problems once you know it. High ROI.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Find Median from Data Stream</div><div class="pattern-tag">Two heaps</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">Two-heap pattern. Asked at Amazon, Google, Uber. Shows you can maintain invariants across data structures.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Serialize / Deserialize Binary Tree</div><div class="pattern-tag">Tree + design</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">Design-flavored tree problem. Strong signal if solved cleanly — tests both traversal knowledge and encoding logic.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Longest Consecutive Sequence (Union-Find)</div><div class="pattern-tag">Union-Find or set</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">You've done this. But can you also solve it with Union-Find? That follow-up appears at Google.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Basic Calculator II</div><div class="pattern-tag">Stack + parsing</div></td>
+          <td><span class="diff m">Med</span></td>
+          <td class="why">String parsing with operator precedence. Comes up at Google/Meta. I, II, III are a progression worth doing all of.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+        <tr>
+          <td><div class="prob">Minimum Cost to Hire K Workers</div><div class="pattern-tag">Heap + greedy + math</div></td>
+          <td><span class="diff h">Hard</span></td>
+          <td class="why">One of the most elegant hard problems. Requires a non-obvious greedy insight + heap. High interview signal at Google.</td>
+          <td class="intuition-empty">—</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>Generated April 2026 &nbsp;·&nbsp; William Xu &nbsp;·&nbsp; willxu.xyz</footer>
+
+</div>
+</body>
+</html>

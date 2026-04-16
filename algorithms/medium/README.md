@@ -71,7 +71,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |
 | [Maximum Difference Score In A Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/description/?envType=company) | Medium | | |
 | [Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | | |
-| [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |## Issues
+| [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
+| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

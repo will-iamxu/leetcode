@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeetCode Pattern Skeletons</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0e0f;
+    --bg2: #161618;
+    --bg3: #1e1e21;
+    --bg4: #252528;
+    --border: rgba(255,255,255,0.08);
+    --border2: rgba(255,255,255,0.14);
+    --text: #e8e6e0;
+    --muted: #888580;
+    --hint: #555250;
+    --blue: #4a9eff;
+    --blue-bg: rgba(74,158,255,0.1);
+    --teal: #3ecf8e;
+    --teal-bg: rgba(62,207,142,0.1);
+    --amber: #f5a623;
+    --amber-bg: rgba(245,166,35,0.1);
+    --purple: #a78bfa;
+    --purple-bg: rgba(167,139,250,0.1);
+    --coral: #f06449;
+    --coral-bg: rgba(240,100,73,0.1);
+    --green: #5cb85c;
+    --green-bg: rgba(92,184,92,0.1);
+    --font: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  header {
+    margin-bottom: 40px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--teal);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .subtitle { color: var(--muted); font-size: 14px; }
+
+  .section { margin-bottom: 28px; }
+
+  .section-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .pattern-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .pattern-grid.single { grid-template-columns: 1fr; }
+
+  @media (max-width: 640px) {
+    .pattern-grid { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 14px;
+    cursor: pointer;
+    user-select: none;
+    gap: 8px;
+  }
+
+  .card-header:hover { background: var(--bg3); }
+
+  .card-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    flex: 1;
+  }
+
+  .card-tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 3px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    letter-spacing: 0.04em;
+  }
+
+  .tag-blue   { background: var(--blue-bg);   color: var(--blue);   border: 1px solid rgba(74,158,255,0.2); }
+  .tag-teal   { background: var(--teal-bg);   color: var(--teal);   border: 1px solid rgba(62,207,142,0.2); }
+  .tag-amber  { background: var(--amber-bg);  color: var(--amber);  border: 1px solid rgba(245,166,35,0.2); }
+  .tag-purple { background: var(--purple-bg); color: var(--purple); border: 1px solid rgba(167,139,250,0.2); }
+  .tag-coral  { background: var(--coral-bg);  color: var(--coral);  border: 1px solid rgba(240,100,73,0.2); }
+  .tag-green  { background: var(--green-bg);  color: var(--green);  border: 1px solid rgba(92,184,92,0.2); }
+
+  .chevron {
+    font-size: 10px;
+    color: var(--hint);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+
+  .chevron.open { transform: rotate(90deg); }
+
+  .card-body {
+    display: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .card-body.open { display: block; }
+
+  pre {
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1.65;
+    color: var(--text);
+    padding: 14px 16px;
+    overflow-x: auto;
+    white-space: pre;
+    background: var(--bg);
+  }
+
+  .kw  { color: #a78bfa; }
+  .fn  { color: #3ecf8e; }
+  .cm  { color: var(--hint); font-style: italic; }
+  .st  { color: #f06449; }
+  .num { color: #f5a623; }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--hint);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="eyebrow">William Xu — LeetCode</div>
+    <h1>Pattern Skeletons</h1>
+    <p class="subtitle">Copy-paste-ready templates for every major interview pattern. Click a card to expand.</p>
+  </header>
+
+  <!-- TRAVERSAL -->
+  <div class="section">
+    <div class="section-title">Traversal</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">DFS — graph / tree</span>
+          <span class="card-tag tag-blue">Recursion / stack</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Iterative (explicit stack)</span>
+<span class="kw">def</span> <span class="fn">dfs</span>(graph, start):
+    visited = <span class="fn">set</span>()
+    stack = [start]
+    <span class="kw">while</span> stack:
+        node = stack.pop()
+        <span class="kw">if</span> node <span class="kw">in</span> visited:
+            <span class="kw">continue</span>
+        visited.add(node)
+        <span class="kw">for</span> nb <span class="kw">in</span> graph[node]:
+            <span class="kw">if</span> nb <span class="kw">not in</span> visited:
+                stack.append(nb)
+
+<span class="cm"># Recursive</span>
+<span class="kw">def</span> <span class="fn">dfs</span>(node, visited):
+    <span class="kw">if</span> node <span class="kw">in</span> visited:
+        <span class="kw">return</span>
+    visited.add(node)
+    <span class="kw">for</span> nb <span class="kw">in</span> graph[node]:
+        dfs(nb, visited)
+
+<span class="cm"># Grid DFS (4-directional)</span>
+<span class="kw">def</span> <span class="fn">dfs</span>(grid, r, c, visited):
+    <span class="kw">if</span> (r &lt; <span class="num">0</span> <span class="kw">or</span> r &gt;= <span class="fn">len</span>(grid) <span class="kw">or</span>
+        c &lt; <span class="num">0</span> <span class="kw">or</span> c &gt;= <span class="fn">len</span>(grid[<span class="num">0</span>]) <span class="kw">or</span>
+        (r, c) <span class="kw">in</span> visited):
+        <span class="kw">return</span>
+    visited.add((r, c))
+    <span class="kw">for</span> dr, dc <span class="kw">in</span> [(<span class="num">0</span>,<span class="num">1</span>),(<span class="num">0</span>,<span class="num">-1</span>),(<span class="num">1</span>,<span class="num">0</span>),(<span class="num">-1</span>,<span class="num">0</span>)]:
+        dfs(grid, r+dr, c+dc, visited)</pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">BFS — shortest path / levels</span>
+          <span class="card-tag tag-blue">Queue</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="kw">from</span> collections <span class="kw">import</span> deque
+
+<span class="kw">def</span> <span class="fn">bfs</span>(graph, start):
+    visited = {start}
+    q = deque([start])
+    <span class="kw">while</span> q:
+        node = q.popleft()
+        <span class="kw">for</span> nb <span class="kw">in</span> graph[node]:
+            <span class="kw">if</span> nb <span class="kw">not in</span> visited:
+                visited.add(nb)
+                q.append(nb)
+
+<span class="cm"># Shortest path — track distance</span>
+<span class="kw">def</span> <span class="fn">bfs_dist</span>(graph, start, end):
+    visited = {start}
+    q = deque([(start, <span class="num">0</span>)])
+    <span class="kw">while</span> q:
+        node, dist = q.popleft()
+        <span class="kw">if</span> node == end:
+            <span class="kw">return</span> dist
+        <span class="kw">for</span> nb <span class="kw">in</span> graph[node]:
+            <span class="kw">if</span> nb <span class="kw">not in</span> visited:
+                visited.add(nb)
+                q.append((nb, dist + <span class="num">1</span>))
+
+<span class="cm"># Level-by-level (tree)</span>
+q = deque([root])
+<span class="kw">while</span> q:
+    <span class="kw">for</span> _ <span class="kw">in</span> <span class="fn">range</span>(<span class="fn">len</span>(q)):   <span class="cm"># snapshot len</span>
+        node = q.popleft()
+        <span class="kw">if</span> node.left:  q.append(node.left)
+        <span class="kw">if</span> node.right: q.append(node.right)</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SLIDING WINDOW & TWO POINTERS -->
+  <div class="section">
+    <div class="section-title">Sliding window &amp; two pointers</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Sliding window</span>
+          <span class="card-tag tag-teal">Variable / fixed</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Variable window — find max window satisfying cond</span>
+l = res = <span class="num">0</span>
+window = {}  <span class="cm"># or Counter, or int</span>
+<span class="kw">for</span> r <span class="kw">in</span> <span class="fn">range</span>(<span class="fn">len</span>(s)):
+    <span class="cm"># expand: add s[r] to window</span>
+    window[s[r]] = window.get(s[r], <span class="num">0</span>) + <span class="num">1</span>
+
+    <span class="kw">while</span> invalid(window):   <span class="cm"># shrink until valid</span>
+        window[s[l]] -= <span class="num">1</span>
+        <span class="kw">if</span> window[s[l]] == <span class="num">0</span>:
+            <span class="kw">del</span> window[s[l]]
+        l += <span class="num">1</span>
+
+    res = <span class="fn">max</span>(res, r - l + <span class="num">1</span>)
+
+<span class="cm"># Fixed window of size k</span>
+window_sum = <span class="fn">sum</span>(nums[:<span class="num">k</span>])
+res = window_sum
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(k, <span class="fn">len</span>(nums)):
+    window_sum += nums[i] - nums[i - k]
+    res = <span class="fn">max</span>(res, window_sum)</pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Two pointers</span>
+          <span class="card-tag tag-teal">Opposite / same dir</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Opposite ends (sorted array, pair sum)</span>
+l, r = <span class="num">0</span>, <span class="fn">len</span>(nums) - <span class="num">1</span>
+<span class="kw">while</span> l &lt; r:
+    s = nums[l] + nums[r]
+    <span class="kw">if</span>   s == target: <span class="kw">return</span> [l, r]
+    <span class="kw">elif</span> s &lt; target:  l += <span class="num">1</span>
+    <span class="kw">else</span>:             r -= <span class="num">1</span>
+
+<span class="cm"># Same direction (fast / slow — cycle detect)</span>
+slow = fast = head
+<span class="kw">while</span> fast <span class="kw">and</span> fast.next:
+    slow = slow.next
+    fast = fast.next.next
+    <span class="kw">if</span> slow == fast:
+        <span class="kw">return</span> <span class="kw">True</span>  <span class="cm"># cycle</span>
+
+<span class="cm"># Same direction (partition / remove dups)</span>
+l = <span class="num">0</span>
+<span class="kw">for</span> r <span class="kw">in</span> <span class="fn">range</span>(<span class="fn">len</span>(nums)):
+    <span class="kw">if</span> nums[r] != <span class="num">0</span>:     <span class="cm"># keep condition</span>
+        nums[l] = nums[r]
+        l += <span class="num">1</span></pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DYNAMIC PROGRAMMING -->
+  <div class="section">
+    <div class="section-title">Dynamic programming</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">1-D DP</span>
+          <span class="card-tag tag-purple">Bottom-up</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Fibonacci-style (climb stairs, house robber)</span>
+dp = [<span class="num">0</span>] * (n + <span class="num">1</span>)
+dp[<span class="num">0</span>], dp[<span class="num">1</span>] = <span class="num">1</span>, <span class="num">1</span>
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">2</span>, n + <span class="num">1</span>):
+    dp[i] = dp[i-<span class="num">1</span>] + dp[i-<span class="num">2</span>]
+
+<span class="cm"># Space-optimised to O(1)</span>
+a, b = <span class="num">1</span>, <span class="num">1</span>
+<span class="kw">for</span> _ <span class="kw">in</span> <span class="fn">range</span>(<span class="num">2</span>, n + <span class="num">1</span>):
+    a, b = b, a + b
+
+<span class="cm"># Prefix-max / running optimum (Kadane's)</span>
+dp = [<span class="num">0</span>] * n
+dp[<span class="num">0</span>] = nums[<span class="num">0</span>]
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, n):
+    dp[i] = <span class="fn">max</span>(nums[i], dp[i-<span class="num">1</span>] + nums[i])
+<span class="kw">return</span> <span class="fn">max</span>(dp)
+
+<span class="cm"># Top-down with memoization</span>
+<span class="kw">from</span> functools <span class="kw">import</span> lru_cache
+
+@lru_cache(maxsize=<span class="kw">None</span>)
+<span class="kw">def</span> <span class="fn">dp</span>(i):
+    <span class="kw">if</span> i &lt;= <span class="num">1</span>: <span class="kw">return</span> i
+    <span class="kw">return</span> dp(i-<span class="num">1</span>) + dp(i-<span class="num">2</span>)</pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">2-D DP</span>
+          <span class="card-tag tag-purple">Grid / strings</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Unique paths / grid DP</span>
+dp = [[<span class="num">1</span>]*n <span class="kw">for</span> _ <span class="kw">in</span> <span class="fn">range</span>(m)]
+<span class="kw">for</span> r <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, m):
+    <span class="kw">for</span> c <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, n):
+        dp[r][c] = dp[r-<span class="num">1</span>][c] + dp[r][c-<span class="num">1</span>]
+
+<span class="cm"># LCS / edit distance skeleton</span>
+m, n = <span class="fn">len</span>(s1), <span class="fn">len</span>(s2)
+dp = [[<span class="num">0</span>]*(n+<span class="num">1</span>) <span class="kw">for</span> _ <span class="kw">in</span> <span class="fn">range</span>(m+<span class="num">1</span>)]
+<span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, m+<span class="num">1</span>):
+    <span class="kw">for</span> j <span class="kw">in</span> <span class="fn">range</span>(<span class="num">1</span>, n+<span class="num">1</span>):
+        <span class="kw">if</span> s1[i-<span class="num">1</span>] == s2[j-<span class="num">1</span>]:
+            dp[i][j] = dp[i-<span class="num">1</span>][j-<span class="num">1</span>] + <span class="num">1</span>
+        <span class="kw">else</span>:
+            dp[i][j] = <span class="num">1</span> + <span class="fn">min</span>(dp[i-<span class="num">1</span>][j],
+                               dp[i][j-<span class="num">1</span>],
+                               dp[i-<span class="num">1</span>][j-<span class="num">1</span>])
+
+<span class="cm"># 0/1 Knapsack</span>
+dp = [<span class="num">0</span>] * (capacity + <span class="num">1</span>)
+<span class="kw">for</span> w, v <span class="kw">in</span> items:
+    <span class="kw">for</span> c <span class="kw">in</span> <span class="fn">range</span>(capacity, w - <span class="num">1</span>, -<span class="num">1</span>):  <span class="cm"># reverse!</span>
+        dp[c] = <span class="fn">max</span>(dp[c], dp[c - w] + v)</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ARRAYS & INTERVALS -->
+  <div class="section">
+    <div class="section-title">Arrays &amp; intervals</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Prefix sum</span>
+          <span class="card-tag tag-amber">Range queries</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Build prefix array</span>
+prefix = [<span class="num">0</span>] * (<span class="fn">len</span>(nums) + <span class="num">1</span>)
+<span class="kw">for</span> i, n <span class="kw">in</span> <span class="fn">enumerate</span>(nums):
+    prefix[i+<span class="num">1</span>] = prefix[i] + n
+
+<span class="cm"># Sum from l to r inclusive (0-indexed)</span>
+range_sum = prefix[r+<span class="num">1</span>] - prefix[l]
+
+<span class="cm"># Subarray sum equals k  (hash map trick)</span>
+count = prefix_sum = <span class="num">0</span>
+seen = {<span class="num">0</span>: <span class="num">1</span>}
+<span class="kw">for</span> n <span class="kw">in</span> nums:
+    prefix_sum += n
+    count += seen.get(prefix_sum - k, <span class="num">0</span>)
+    seen[prefix_sum] = seen.get(prefix_sum, <span class="num">0</span>) + <span class="num">1</span></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Intervals</span>
+          <span class="card-tag tag-amber">Sort + merge</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Merge overlapping intervals</span>
+intervals.sort(key=<span class="kw">lambda</span> x: x[<span class="num">0</span>])
+res = [intervals[<span class="num">0</span>]]
+<span class="kw">for</span> s, e <span class="kw">in</span> intervals[<span class="num">1</span>:]:
+    <span class="kw">if</span> s &lt;= res[-<span class="num">1</span>][<span class="num">1</span>]:
+        res[-<span class="num">1</span>][<span class="num">1</span>] = <span class="fn">max</span>(res[-<span class="num">1</span>][<span class="num">1</span>], e)
+    <span class="kw">else</span>:
+        res.append([s, e])
+
+<span class="cm"># Min rooms (meeting rooms II)</span>
+<span class="kw">import</span> heapq
+intervals.sort()
+heap = []   <span class="cm"># end times</span>
+<span class="kw">for</span> s, e <span class="kw">in</span> intervals:
+    <span class="kw">if</span> heap <span class="kw">and</span> heap[<span class="num">0</span>] &lt;= s:
+        heapq.heappop(heap)
+    heapq.heappush(heap, e)
+<span class="kw">return</span> <span class="fn">len</span>(heap)</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TREES -->
+  <div class="section">
+    <div class="section-title">Trees</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Binary tree traversal</span>
+          <span class="card-tag tag-green">DFS orders</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Inorder iterative (sorted for BST)</span>
+res, stack, cur = [], [], root
+<span class="kw">while</span> cur <span class="kw">or</span> stack:
+    <span class="kw">while</span> cur:
+        stack.append(cur)
+        cur = cur.left
+    cur = stack.pop()
+    res.append(cur.val)
+    cur = cur.right
+
+<span class="cm"># Generic recursive template</span>
+<span class="kw">def</span> <span class="fn">dfs</span>(node):
+    <span class="kw">if not</span> node: <span class="kw">return</span> <span class="num">0</span>
+    left  = dfs(node.left)
+    right = dfs(node.right)
+    <span class="cm"># post-order: process after children</span>
+    <span class="kw">return</span> <span class="fn">max</span>(left, right) + <span class="num">1</span>  <span class="cm"># e.g. height</span>
+
+<span class="cm"># BST search</span>
+<span class="kw">def</span> <span class="fn">search</span>(node, target):
+    <span class="kw">if not</span> node: <span class="kw">return False</span>
+    <span class="kw">if</span> node.val == target: <span class="kw">return True</span>
+    <span class="kw">if</span> target &lt; node.val: <span class="kw">return</span> search(node.left, target)
+    <span class="kw">return</span> search(node.right, target)</pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Trie</span>
+          <span class="card-tag tag-green">Prefix search</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="kw">class</span> <span class="fn">TrieNode</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.children = {}
+        self.end = <span class="kw">False</span>
+
+<span class="kw">class</span> <span class="fn">Trie</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.root = TrieNode()
+
+    <span class="kw">def</span> <span class="fn">insert</span>(self, word):
+        cur = self.root
+        <span class="kw">for</span> ch <span class="kw">in</span> word:
+            cur = cur.children.setdefault(ch, TrieNode())
+        cur.end = <span class="kw">True</span>
+
+    <span class="kw">def</span> <span class="fn">search</span>(self, word):
+        cur = self.root
+        <span class="kw">for</span> ch <span class="kw">in</span> word:
+            <span class="kw">if</span> ch <span class="kw">not in</span> cur.children: <span class="kw">return False</span>
+            cur = cur.children[ch]
+        <span class="kw">return</span> cur.end
+
+    <span class="kw">def</span> <span class="fn">startsWith</span>(self, prefix):
+        cur = self.root
+        <span class="kw">for</span> ch <span class="kw">in</span> prefix:
+            <span class="kw">if</span> ch <span class="kw">not in</span> cur.children: <span class="kw">return False</span>
+            cur = cur.children[ch]
+        <span class="kw">return True</span></pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- BACKTRACKING & BINARY SEARCH -->
+  <div class="section">
+    <div class="section-title">Backtracking &amp; binary search</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Backtracking</span>
+          <span class="card-tag tag-coral">Subsets / perms</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Universal skeleton</span>
+res = []
+<span class="kw">def</span> <span class="fn">backtrack</span>(start, path):
+    res.append(path[:])      <span class="cm"># record (or at leaf)</span>
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(start, <span class="fn">len</span>(nums)):
+        path.append(nums[i])
+        backtrack(i + <span class="num">1</span>, path)  <span class="cm"># i+1: no reuse</span>
+        path.pop()               <span class="cm"># undo</span>
+backtrack(<span class="num">0</span>, [])
+
+<span class="cm"># Permutations variant</span>
+<span class="kw">def</span> <span class="fn">backtrack</span>(path, used):
+    <span class="kw">if</span> <span class="fn">len</span>(path) == <span class="fn">len</span>(nums):
+        res.append(path[:]); <span class="kw">return</span>
+    <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(<span class="fn">len</span>(nums)):
+        <span class="kw">if</span> used[i]: <span class="kw">continue</span>
+        used[i] = <span class="kw">True</span>
+        path.append(nums[i])
+        backtrack(path, used)
+        path.pop(); used[i] = <span class="kw">False</span>
+
+<span class="cm"># Prune duplicates (sort first)</span>
+nums.sort()
+<span class="kw">if</span> i > start <span class="kw">and</span> nums[i] == nums[i-<span class="num">1</span>]: <span class="kw">continue</span></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Binary search</span>
+          <span class="card-tag tag-coral">Sorted / monotone</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Standard (exact target)</span>
+l, r = <span class="num">0</span>, <span class="fn">len</span>(nums) - <span class="num">1</span>
+<span class="kw">while</span> l &lt;= r:
+    mid = (l + r) // <span class="num">2</span>
+    <span class="kw">if</span>   nums[mid] == target: <span class="kw">return</span> mid
+    <span class="kw">elif</span> nums[mid] &lt; target:  l = mid + <span class="num">1</span>
+    <span class="kw">else</span>:                     r = mid - <span class="num">1</span>
+
+<span class="cm"># Left-most position (lower bound)</span>
+l, r = <span class="num">0</span>, <span class="fn">len</span>(nums)
+<span class="kw">while</span> l &lt; r:
+    mid = (l + r) // <span class="num">2</span>
+    <span class="kw">if</span> nums[mid] &lt; target: l = mid + <span class="num">1</span>
+    <span class="kw">else</span>:                  r = mid
+<span class="kw">return</span> l   <span class="cm"># first idx >= target</span>
+
+<span class="cm"># On answer space (monotone predicate)</span>
+l, r = min_ans, max_ans
+<span class="kw">while</span> l &lt; r:
+    mid = (l + r) // <span class="num">2</span>
+    <span class="kw">if</span> feasible(mid): r = mid
+    <span class="kw">else</span>:             l = mid + <span class="num">1</span>
+<span class="kw">return</span> l</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GRAPH ALGORITHMS -->
+  <div class="section">
+    <div class="section-title">Graph algorithms</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Topological sort</span>
+          <span class="card-tag tag-blue">DAG / courses</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="kw">from</span> collections <span class="kw">import</span> deque, defaultdict
+
+<span class="cm"># Kahn's (BFS-based)</span>
+indegree = defaultdict(<span class="fn">int</span>)
+graph    = defaultdict(<span class="fn">list</span>)
+<span class="kw">for</span> u, v <span class="kw">in</span> edges:
+    graph[u].append(v); indegree[v] += <span class="num">1</span>
+
+q = deque([n <span class="kw">for</span> n <span class="kw">in</span> nodes <span class="kw">if</span> indegree[n] == <span class="num">0</span>])
+order = []
+<span class="kw">while</span> q:
+    node = q.popleft(); order.append(node)
+    <span class="kw">for</span> nb <span class="kw">in</span> graph[node]:
+        indegree[nb] -= <span class="num">1</span>
+        <span class="kw">if</span> indegree[nb] == <span class="num">0</span>: q.append(nb)
+<span class="cm"># cycle if len(order) != len(nodes)</span>
+
+<span class="cm"># DFS-based (post-order reverse)</span>
+visited, path, res = <span class="fn">set</span>(), <span class="fn">set</span>(), []
+<span class="kw">def</span> <span class="fn">dfs</span>(n):
+    <span class="kw">if</span> n <span class="kw">in</span> path:    <span class="kw">return False</span>   <span class="cm"># cycle</span>
+    <span class="kw">if</span> n <span class="kw">in</span> visited: <span class="kw">return True</span>
+    path.add(n)
+    <span class="kw">for</span> nb <span class="kw">in</span> graph[n]:
+        <span class="kw">if not</span> dfs(nb): <span class="kw">return False</span>
+    path.remove(n); visited.add(n); res.append(n)
+    <span class="kw">return True</span></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Union-Find (DSU)</span>
+          <span class="card-tag tag-blue">Connected components</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="kw">class</span> <span class="fn">DSU</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self, n):
+        self.parent = <span class="fn">list</span>(<span class="fn">range</span>(n))
+        self.rank   = [<span class="num">0</span>] * n
+
+    <span class="kw">def</span> <span class="fn">find</span>(self, x):
+        <span class="kw">if</span> self.parent[x] != x:
+            self.parent[x] = self.find(self.parent[x])
+        <span class="kw">return</span> self.parent[x]
+
+    <span class="kw">def</span> <span class="fn">union</span>(self, x, y):
+        px, py = self.find(x), self.find(y)
+        <span class="kw">if</span> px == py: <span class="kw">return False</span>
+        <span class="kw">if</span> self.rank[px] &lt; self.rank[py]: px, py = py, px
+        self.parent[py] = px
+        <span class="kw">if</span> self.rank[px] == self.rank[py]: self.rank[px] += <span class="num">1</span>
+        <span class="kw">return True</span>
+
+<span class="cm"># Usage</span>
+dsu = DSU(n)
+<span class="kw">for</span> u, v <span class="kw">in</span> edges:
+    dsu.union(u, v)
+components = <span class="fn">len</span>({dsu.find(i) <span class="kw">for</span> i <span class="kw">in</span> <span class="fn">range</span>(n)})</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HEAP & MONOTONIC STACK -->
+  <div class="section">
+    <div class="section-title">Heap &amp; monotonic stack</div>
+    <div class="pattern-grid">
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Heap (priority queue)</span>
+          <span class="card-tag tag-teal">Top-K / Dijkstra</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="kw">import</span> heapq
+
+<span class="cm"># Min-heap (default)</span>
+heap = []
+heapq.heappush(heap, val)
+smallest = heapq.heappop(heap)
+
+<span class="cm"># Max-heap: negate values</span>
+heapq.heappush(heap, -val)
+largest = -heapq.heappop(heap)
+
+<span class="cm"># Top K elements</span>
+<span class="kw">return</span> heapq.nlargest(k, nums)   <span class="cm"># O(n log k)</span>
+
+<span class="cm"># Dijkstra</span>
+dist = {node: <span class="fn">float</span>(<span class="st">'inf'</span>) <span class="kw">for</span> node <span class="kw">in</span> graph}
+dist[src] = <span class="num">0</span>
+pq = [(<span class="num">0</span>, src)]
+<span class="kw">while</span> pq:
+    d, u = heapq.heappop(pq)
+    <span class="kw">if</span> d > dist[u]: <span class="kw">continue</span>
+    <span class="kw">for</span> v, w <span class="kw">in</span> graph[u]:
+        nd = d + w
+        <span class="kw">if</span> nd &lt; dist[v]:
+            dist[v] = nd
+            heapq.heappush(pq, (nd, v))</pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggle(this)">
+          <span class="card-title">Monotonic stack</span>
+          <span class="card-tag tag-teal">Next greater / spans</span>
+          <span class="chevron">▶</span>
+        </div>
+        <div class="card-body">
+<pre><span class="cm"># Next greater element</span>
+res = [-<span class="num">1</span>] * <span class="fn">len</span>(nums)
+stack = []  <span class="cm"># indices, decreasing values</span>
+<span class="kw">for</span> i, n <span class="kw">in</span> <span class="fn">enumerate</span>(nums):
+    <span class="kw">while</span> stack <span class="kw">and</span> nums[stack[-<span class="num">1</span>]] &lt; n:
+        res[stack.pop()] = n
+    stack.append(i)
+
+<span class="cm"># Largest rectangle in histogram</span>
+stack, max_area = [], <span class="num">0</span>
+heights.append(<span class="num">0</span>)  <span class="cm"># sentinel flush</span>
+<span class="kw">for</span> i, h <span class="kw">in</span> <span class="fn">enumerate</span>(heights):
+    start = i
+    <span class="kw">while</span> stack <span class="kw">and</span> stack[-<span class="num">1</span>][<span class="num">1</span>] > h:
+        idx, height = stack.pop()
+        max_area = <span class="fn">max</span>(max_area, height * (i - idx))
+        start = idx
+    stack.append((start, h))
+
+<span class="cm"># Monotonic deque (sliding window max)</span>
+<span class="kw">from</span> collections <span class="kw">import</span> deque
+dq, res = deque(), []
+<span class="kw">for</span> i, n <span class="kw">in</span> <span class="fn">enumerate</span>(nums):
+    <span class="kw">while</span> dq <span class="kw">and</span> nums[dq[-<span class="num">1</span>]] &lt; n: dq.pop()
+    dq.append(i)
+    <span class="kw">if</span> dq[<span class="num">0</span>] &lt; i - k + <span class="num">1</span>: dq.popleft()
+    <span class="kw">if</span> i >= k - <span class="num">1</span>: res.append(nums[dq[<span class="num">0</span>]])</pre>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>Generated April 2026 &nbsp;·&nbsp; William Xu &nbsp;·&nbsp; willxu.xyz</footer>
+
+</div>
+<script>
+function toggle(header) {
+  const body = header.nextElementSibling;
+  const chevron = header.querySelector('.chevron');
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  chevron.classList.toggle('open', !isOpen);
+}
+</script>
+</body>
+</html>

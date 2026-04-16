@@ -1,9 +1,9 @@
 # LeetCode Problems Completed
 
-**Total: 110 problems**
+**Total: 111 problems**
 
 - Easy: 31
-- Medium: 72
+- Medium: 73
 - Hard: 7
 
 | # | Problem | Difficulty | Data Structures | Patterns |
@@ -87,36 +87,37 @@
 | 77 | [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) | Medium | Arrays | Sliding Window |
 | 78 | [Permutations](https://leetcode.com/problems/permutations/description/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
 | 79 | [Product Of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Medium | Arrays | Prefix Sum, Suffix Sum |
-| 80 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Arrays | Two Pointers |
-| 81 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | Linked Lists | Two Pointers |
-| 82 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | Two Pointers |
-| 83 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked Lists | Two Pointers |
-| 84 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium | Linked Lists | Two Pointers |
-| 85 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | Hash Tables, Heaps | Greedy |
-| 86 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked Lists | Two Pointers |
-| 87 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Arrays | Two Pointers |
-| 88 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | Arrays, Queues | Breadth First Search (Bfs) |
-| 89 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Trees | Depth First Search (Dfs) |
-| 90 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Arrays | Binary Search |
-| 91 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Arrays | Binary Search |
-| 92 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | Queue, String, Tree | Breadth First Search (Bfs) |
-| 93 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
-| 94 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/) | Hard | Array, String | Dynamic Programming |
-| 95 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
-| 96 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
-| 97 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
-| 98 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
-| 99 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
-| 100 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
-| 101 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
-| 102 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
-| 103 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
-| 104 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
-| 105 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
-| 106 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
-| 107 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
-| 108 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
-| 109 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
-| 110 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 80 | [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | Array | Binary Search |
+| 81 | [Remove Duplicates From Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | Easy | Arrays | Two Pointers |
+| 82 | [Remove Duplicates From Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Easy | Linked Lists | Two Pointers |
+| 83 | [Remove Element](https://leetcode.com/problems/remove-element/) | Easy | Arrays | Two Pointers |
+| 84 | [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | Medium | Linked Lists | Two Pointers |
+| 85 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Medium | Linked Lists | Two Pointers |
+| 86 | [Reorganize String](https://leetcode.com/problems/reorganize-string/description/) | Medium | Hash Tables, Heaps | Greedy |
+| 87 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | Easy | Linked Lists | Two Pointers |
+| 88 | [Reverse String](https://leetcode.com/problems/reverse-string/description/) | Easy | Arrays | Two Pointers |
+| 89 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | Arrays, Queues | Breadth First Search (Bfs) |
+| 90 | [Same Tree](https://leetcode.com/problems/same-tree/) | Easy | Trees | Depth First Search (Dfs) |
+| 91 | [Search A 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Medium | Arrays | Binary Search |
+| 92 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | Arrays | Binary Search |
+| 93 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | Queue, String, Tree | Breadth First Search (Bfs) |
+| 94 | [Sortanarray.Py](https://neetcode.io/solutions/sort-an-array) | Medium | Arrays | Divide And Conquer |
+| 95 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/) | Hard | Array, String | Dynamic Programming |
+| 96 | [Subsets](https://leetcode.com/problems/subsets/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
+| 97 | [Subtree Of Another Tree](http://leetcode.com/problems/subtree-of-another-tree/description/) | Easy | Trees | Depth First Search (Dfs) |
+| 98 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | Arrays | Depth First Search (Dfs) |
+| 99 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | Hash Table, Heap, Queue | Greedy |
+| 100 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | Arrays, Hash Tables | Binary Search |
+| 101 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | Medium | Arrays, Hash Tables |  |
+| 102 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) | Hard | Arrays | Two Pointers |
+| 103 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Arrays, Hash Tables |  |
+| 104 | [Two Sum Ii Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Medium | Arrays | Two Pointers |
+| 105 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/) | Easy | Hash Tables |  |
+| 106 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Easy | Arrays | Two Pointers |
+| 107 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) | Easy | Stacks | Monotonic Stack |
+| 108 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Medium | Arrays, Hash Tables |  |
+| 109 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | Medium | Trees | Depth First Search (Dfs) |
+| 110 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | Arrays | Dynamic Programming |
+| 111 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | Arrays | Backtracking, Depth First Search (Dfs) |
 
 *Generated by list_problems.py*

@@ -54,7 +54,8 @@ The binary search pattern is a powerful technique that can be applied to various
 | [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | Medium | | |
 | [Time Based Key Value Store](https://leetcode.com/problems/time-based-key-value-store/description/) | Medium | | |
 
-## Issues
+
+| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
