@@ -166,3 +166,4 @@ Feel free to explore the examples and problems provided in this directory to enh
 | [Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | | |
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
+| [Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | | |

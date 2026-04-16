@@ -72,7 +72,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Maximum Difference Score In A Grid](https://leetcode.com/problems/maximum-difference-score-in-a-grid/description/?envType=company) | Medium | | |
 | [Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
-| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |## Issues
+| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |
+| [Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

@@ -33,3 +33,4 @@ This directory contains LeetCode problems related to patterns/depth-first search
 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | Medium | | |
 | [Count Good Nodes In Binary Tree](https://leetcode.com/problems/count-good-nodes-in-binary-tree/) | Medium | | |
 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | Hard | | |
+| [Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | | |
