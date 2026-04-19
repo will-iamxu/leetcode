@@ -132,7 +132,8 @@ Understanding arrays is crucial for solving many algorithmic problems on platfor
 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/description/) | Medium | | |
 | [Longest Balanced Subarray I](https://leetcode.com/problems/longest-balanced-subarray-i/?envType=company) | Medium | | |
 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/?envType=company) | Hard | | |
-| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |## Issues
+| [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |
+| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

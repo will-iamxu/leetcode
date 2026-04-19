@@ -33,7 +33,8 @@ Refer to the individual examples and explanations for a deeper understanding of 
 |---------|------------|-----------------|--------|
 
 
-| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |## Issues
+| [Clone Graph](https://leetcode.com/problems/clone-graph/description/) | Medium | | |
+| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

@@ -11,3 +11,4 @@ This directory contains LeetCode problems related to queues.
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | | |
 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/submissions/1934162588/) | Medium | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
+| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |

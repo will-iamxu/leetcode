@@ -265,7 +265,7 @@
           <td><div class="prob">Course Schedule II</div><div class="pattern-tag">Topological sort</div></td>
           <td><span class="diff m">Med</span></td>
           <td class="why">Topo sort is tested more often than most graph algorithms. Have both Kahn's and DFS versions clean.</td>
-          <td class="intuition-empty">—</td>
+          <td class="intuition">Track in-degrees (prereq counts). BFS from all 0-indegree nodes (no prereqs), decrementing neighbors as each finishes. A course is only queued once all its prereqs are done.</td>
         </tr>
         <tr>
           <td><div class="prob">Word Break</div><div class="pattern-tag">1-D DP</div></td>

@@ -10,3 +10,4 @@ This directory contains LeetCode problems related to breadth-first search (bfs).
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | Medium | | |
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
+| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |
