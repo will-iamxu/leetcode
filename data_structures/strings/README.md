@@ -11,3 +11,4 @@ This directory contains LeetCode problems related to strings.
 | [Strange Printer](https://leetcode.com/problems/strange-printer/description/) | Hard | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
+| [Word Break](https://leetcode.com/problems/word-break/) | Medium | | |

@@ -74,7 +74,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
 | [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |
 | [Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | | |
-| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |## Issues
+| [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |
+| [Word Break](https://leetcode.com/problems/word-break/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  
