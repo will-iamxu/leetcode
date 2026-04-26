@@ -235,7 +235,7 @@
           <td><div class="prob">Minimum Window Substring</div><div class="pattern-tag">Sliding window</div></td>
           <td><span class="diff h">Hard</span></td>
           <td class="why">The canonical hard sliding window. If you can do this cleanly, every other window problem is trivial.</td>
-          <td class="intuition-empty">—</td>
+          <td class="intuition">Track char counts for t and the current window. Use have/need to know when the window is valid. Expand right always, shrink from left while valid to find the min.</td>
         </tr>
         <tr>
           <td><div class="prob">LRU Cache</div><div class="pattern-tag">Linked list + hashmap</div></td>

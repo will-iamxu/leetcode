@@ -12,3 +12,4 @@ This directory contains LeetCode problems related to strings.
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
 | [Word Search](https://leetcode.com/problems/word-search/) | Medium | | |
 | [Word Break](https://leetcode.com/problems/word-break/) | Medium | | |
+| [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Hard | | |
