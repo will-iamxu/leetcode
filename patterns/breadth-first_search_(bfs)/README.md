@@ -11,3 +11,4 @@ This directory contains LeetCode problems related to breadth-first search (bfs).
 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) | Medium | | |
 | [Serialize And Deserialize Bst](https://leetcode.com/problems/serialize-and-deserialize-bst/) | Medium | | |
 | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |
+| [Maximum Width Of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | | |

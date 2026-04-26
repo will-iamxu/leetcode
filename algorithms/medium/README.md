@@ -75,7 +75,8 @@ This directory contains LeetCode problems related to algorithms/medium.
 | [Random Pick With Weight](https://leetcode.com/problems/random-pick-with-weight/) | Medium | | |
 | [Flatten Binary Tree To Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | Medium | | |
 | [Course Schedule Ii](https://leetcode.com/problems/course-schedule-ii/) | Medium | | |
-| [Word Break](https://leetcode.com/problems/word-break/) | Medium | | |## Issues
+| [Word Break](https://leetcode.com/problems/word-break/) | Medium | | |
+| [Maximum Width Of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree/) | Medium | | |## Issues
 *Issues encountered while solving problems in this category (leave blank for now)*
 
 ## Videos  

@@ -375,7 +375,7 @@
           <td><div class="prob">Maximum Width of Binary Tree</div><div class="pattern-tag">BFS / tree indexing</div></td>
           <td><span class="diff m">Med</span></td>
           <td class="why">BFS with positional indexing. A non-obvious use of level-order traversal.</td>
-          <td class="intuition-empty">—</td>
+          <td class="intuition">BFS while assigning each node a heap-style index (left=2i, right=2i+1). Width per level = rightmost − leftmost + 1. Normalize to leftmost each level to avoid overflow.</td>
         </tr>
       </tbody>
     </table>
